@@ -12,11 +12,18 @@ emoji = {
 		cup: "\u{1F3C6}",
 		mark: "\u{25AA}",
 		person: "\u{1F46E}",
-		kiss: "\u{1F618}"
+		kiss: "\u{1F618}",
+		phone: "\u{1F4F1}",
+		gun: "\u{1F52B}",
+		department: "\u{1F52F}",
+		cheburek: "\u{1F473}",
+		ok_condition: "\u{1F44D}",
+		bad_condition: "\u{1F480}"
 }
 
 MONTHS = [nil, "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"]
 
+RIFLE_COLUMNS = [:id, :title, :condition, :user_id, :comment]
 USER_COLUMNS = [:id, :name, :chat_id, :phone, :command, :object_id, :subject_id, :registred]
 DONATE_COLUMS = [:id, :user_id, :sum, :created_at]
 VALID_COMMANDS = ['/help', '/changename', '/donate']
@@ -30,13 +37,25 @@ main_menu =	[[
 		]]
 menu = Telegram::Bot::Types::InlineKeyboardMarkup.new(inline_keyboard: main_menu)
 
-user_menu = [['Топ донатеров'], ['Обо мне', 'Мой донат']]
+user_menu = [['Топ донатеров'], ['Профиль', 'Мой донат']]
 markup = Telegram::Bot::Types::ReplyKeyboardMarkup.new(keyboard: user_menu, one_time_keyboard: false, resize_keyboard: true)
 next_step = Telegram::Bot::Types::ReplyKeyboardMarkup.new(keyboard: [['Далее']], one_time_keyboard: true, resize_keyboard: true)
 done = Telegram::Bot::Types::ReplyKeyboardMarkup.new(keyboard: [['Готово']], one_time_keyboard: true, resize_keyboard: true)
 
 def user_not_exist?(id)
 	(@db.execute "select * from users where chat_id = ?", id).empty?
+end
+
+def get_user_info(user_id)
+	data = @db.execute(<<-SQL
+		select users.name, users.phone, rifles.title, rifles.condition, departments.title 
+		from ((users 
+		left join rifles on users.rifle_id = rifles.id) 
+		inner join departments on users.department_id = departments.id) 
+		where users.id=#{user_id};
+	SQL
+	).first
+	get_hash(data, [ :name, :phone, :rifle_title, :rifle_status, :department ])
 end
 
 def get_user(user_id)
@@ -48,14 +67,20 @@ def clear_command(user_id)
 	@db.execute "update users set command=? where id=?", nil, user_id
 end
 
-def users_for_donate_btns
+def users_btns(command)
 	btns = @db.execute("select * from users").map { |user| get_hash(user, USER_COLUMNS)}
-		.map {|user| Telegram::Bot::Types::InlineKeyboardButton.new(text: user[:name], callback_data: "addUserDonate_#{user[:id]}")}
+		.map {|user| Telegram::Bot::Types::InlineKeyboardButton.new(text: user[:name], callback_data: "#{command}_#{user[:id]}")}
+	Telegram::Bot::Types::InlineKeyboardMarkup.new(inline_keyboard: btns)	
+end
+
+def rifles_btns(command)
+	btns = @db.execute("select * from rifles").map { |rifle| get_hash(rifle, RIFLE_COLUMNS)}
+		.map {|rifle| Telegram::Bot::Types::InlineKeyboardButton.new(text: rifle[:title], callback_data: "#{command}_#{rifle[:id]}")}
+	btns << Telegram::Bot::Types::InlineKeyboardButton.new(text: 'Отвязать', callback_data: "#{command}_0")
 	Telegram::Bot::Types::InlineKeyboardMarkup.new(inline_keyboard: btns)	
 end
 
 def get_top_donaters
-
 	data_m = @db.execute <<-SQL
 		select max(donate), user, month
 	    from (select sum(sum) as donate, users.name as user, strftime("%m-%Y", created_at) as month, users.id as id
@@ -78,6 +103,10 @@ def get_top_donaters
 	donate_m = data_m.map {|donate| get_hash(donate, [:sum, :name, :month])}
 	donate_a = data_a.map {|donate| get_hash(donate, [:name, :sum])}
 	[donate_m, donate_a]
+end
+
+def phone_format(number)
+	"+#{number[0]} (#{number[1..3]}) #{number[4..6]}-#{number[7..8]}-#{number[9..10]}"
 end
 
 def get_hash(data, model)
@@ -107,6 +136,12 @@ def set_user_object(obj_id, user_id)
 											user_id
 end
 
+def set_user_subject(obj_id, user_id)
+	@db.execute "update users set subject_id=? where id=?", 
+											obj_id,
+											user_id
+end
+
 def reset_command(user_id)
 	@db.execute "update users set command=?, subject_id=?, object_id=? where id=?", 
 											nil, nil, nil,
@@ -126,7 +161,6 @@ end
 Telegram::Bot::Client.run(token) do |bot|
 	bot.listen do |message|
 		  user = get_hash(@db.execute("select * from users where chat_id = ?", message.from.id).first, USER_COLUMNS)
-
 		  if user.empty? and message.text != '/start'
 			bot.api.send_message(chat_id: message.from.id, text: 'Я тебя не знаю! набери /start для начала') 
 		 	next
@@ -137,6 +171,30 @@ Telegram::Bot::Client.run(token) do |bot|
 		  	puts "type callback"
 
 ########### КОЛЛБЭКИ
+			ap message.data
+
+
+			if message.data == 'linkRifle'
+				bot.api.edit_message_text(message_id: message.message.message_id, chat_id: message.from.id, text: 'Выбери пользователя', reply_markup: users_btns("linkUserToRifle"))
+				next
+			end
+
+			if message.data =~ /linkRifleToUser_\d+/
+				rifle_id = message.data.slice(/\d+/)
+				user = get_user(user[:id])
+				@db.execute "update users set rifle_id=? where id=?", rifle_id, user[:object_id]
+				bot.api.edit_message_text(message_id: message.message.message_id, chat_id: message.from.id, text: 'Властвуй :3', reply_markup: menu)
+				bot.api.send_message(chat_id: message.from.id, text: 'Оружие привязано') 
+				reset_command(user[:id])
+				next
+			end
+
+			if message.data =~ /linkUserToRifle_\d+/
+				user_id = message.data.slice(/\d+/)
+				set_user_object(user_id, user[:id])
+				bot.api.edit_message_text(message_id: message.message.message_id, chat_id: message.from.id, text: 'Выбери пушку', reply_markup: rifles_btns("linkRifleToUser"))
+			next
+			end
 
 			if message.data =~ /addUserDonate_\d+/
 				user_id = message.data.slice(/\d+/)
@@ -148,11 +206,9 @@ Telegram::Bot::Client.run(token) do |bot|
 
 			if message.data == 'addDonate'
 				set_user_command(message.data, user[:id])
-				tmp_menu = Telegram::Bot::Types::InlineKeyboardMarkup.new(inline_keyboard: users_for_donate_btns)
-				bot.api.edit_message_text(message_id: message.message.message_id, chat_id: message.from.id, text: 'Выбери пользователя', reply_markup: users_for_donate_btns)
+				bot.api.edit_message_text(message_id: message.message.message_id, chat_id: message.from.id, text: 'Выбери пользователя', reply_markup: users_btns("addUserDonate"))
 				next
 			end
-
 
 		  when Telegram::Bot::Types::InlineQuery
 		  	puts "type inline query"
@@ -196,6 +252,21 @@ Telegram::Bot::Client.run(token) do |bot|
 		  		else
 		  			msg += "\nЗа все время вдоначено #{emoji[:money]}#{donations[1]}\n"
 		  		end
+		    	bot.api.send_message(chat_id: message.from.id, text: msg)
+		    	next
+		  	end
+
+		  	if message.text == 'Профиль'
+		  		user_info = get_user_info(user[:id])
+		  		msg = "#{emoji[:cheburek]}Позывной: #{user_info[:name]}\n"
+		  		msg += "#{emoji[:phone]}Телефон: #{phone_format(user_info[:phone])}\n"
+		  		msg += "#{emoji[:gun]}Оружие: #{user_info[:rifle_title] ||= 'не закреплено' }"
+		  		if user_info[:rifle_status].nil?
+		  		msg += "\n"
+		  		else
+		  		msg += "\t[состояние:#{user_info[:rifle_status] == 1 ? emoji[:ok_condition] : emoji[:bad_condition]}]\n"
+		  		end
+		  		msg += "#{emoji[:department]}Отеделение: #{user_info[:department]}"
 		    	bot.api.send_message(chat_id: message.from.id, text: msg)
 		    	next
 		  	end
