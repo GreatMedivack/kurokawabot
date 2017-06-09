@@ -6,7 +6,7 @@ require 'sqlite3'
 
 @db = SQLite3::Database.new 'database.db'
 
-emoji = {
+EMOJI = {
 		money: "\u{1F4B0}", 
 		calendar: "\u{1F4C5}", 
 		cup: "\u{1F3C6}",
@@ -18,7 +18,9 @@ emoji = {
 		department: "\u{1F52F}",
 		cheburek: "\u{1F473}",
 		ok_condition: "\u{1F44D}",
-		bad_condition: "\u{1F480}"
+		bad_condition: "\u{1F480}",
+		comment: "\u{1F4AC}",
+		cry: "\u{1F62D}"
 }
 
 MONTHS = [nil, "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"]
@@ -29,12 +31,13 @@ DONATE_COLUMS = [:id, :user_id, :sum, :created_at]
 VALID_COMMANDS = ['/help', '/changename', '/donate']
 ADMIN_ID = 98141300
 
-main_menu =	[[
-	        Telegram::Bot::Types::InlineKeyboardButton.new(text: 'Внести донат', callback_data: 'addDonate'),
-	        Telegram::Bot::Types::InlineKeyboardButton.new(text: 'Расходы', callback_data: 'addExpense'),
-	        Telegram::Bot::Types::InlineKeyboardButton.new(text: 'Объявление', callback_data: 'addDonate'),
-	        Telegram::Bot::Types::InlineKeyboardButton.new(text: 'Привязать ствол', callback_data: 'linkRifle')
-		]]
+main_menu =	[
+	        [Telegram::Bot::Types::InlineKeyboardButton.new(text: 'Расходы', callback_data: 'addExpense'),
+	        Telegram::Bot::Types::InlineKeyboardButton.new(text: 'Внести донат', callback_data: 'addDonate')],
+	        [Telegram::Bot::Types::InlineKeyboardButton.new(text: 'Оружие', callback_data: 'riflesList'),
+	        Telegram::Bot::Types::InlineKeyboardButton.new(text: 'Привязка оружия', callback_data: 'linkRifle')],
+	        Telegram::Bot::Types::InlineKeyboardButton.new(text: 'Объявление', callback_data: 'announcement')
+			]
 menu = Telegram::Bot::Types::InlineKeyboardMarkup.new(inline_keyboard: main_menu)
 
 user_menu = [['Топ донатеров'], ['Профиль', 'Мой донат']]
@@ -68,16 +71,63 @@ def clear_command(user_id)
 end
 
 def users_btns(command)
-	btns = @db.execute("select * from users").map { |user| get_hash(user, USER_COLUMNS)}
-		.map {|user| Telegram::Bot::Types::InlineKeyboardButton.new(text: user[:name], callback_data: "#{command}_#{user[:id]}")}
+	btns = []
+	row = []
+	users = @db.execute("select * from users").map { |user| get_hash(user, USER_COLUMNS)}
+	users.each_with_index do |user, index| 
+		row << Telegram::Bot::Types::InlineKeyboardButton.new(text: user[:name], callback_data: "#{command}_#{user[:id]}")
+		if (index + 1) % 3 == 0
+			btns << row
+			row = []
+		end
+	end
+	btns << row
 	Telegram::Bot::Types::InlineKeyboardMarkup.new(inline_keyboard: btns)	
 end
 
+def rifle_menu_btns(id)
+	btns =	[
+	        [Telegram::Bot::Types::InlineKeyboardButton.new(text: 'Информация', callback_data: "rifleFullInfo_#{id}"),
+	        Telegram::Bot::Types::InlineKeyboardButton.new(text: 'Состояние', callback_data: "changeCondition_#{id}"),
+	        Telegram::Bot::Types::InlineKeyboardButton.new(text: 'Комментарий', callback_data: "setRifleComment_#{id}")],
+	        Telegram::Bot::Types::InlineKeyboardButton.new(text: 'Назад', callback_data: 'riflesList')
+			]
+	Telegram::Bot::Types::InlineKeyboardMarkup.new(inline_keyboard: btns)
+end
+
 def rifles_btns(command)
-	btns = @db.execute("select * from rifles").map { |rifle| get_hash(rifle, RIFLE_COLUMNS)}
-		.map {|rifle| Telegram::Bot::Types::InlineKeyboardButton.new(text: rifle[:title], callback_data: "#{command}_#{rifle[:id]}")}
-	btns << Telegram::Bot::Types::InlineKeyboardButton.new(text: 'Отвязать', callback_data: "#{command}_0")
+	btns = []
+	row = []
+	rifles = @db.execute("select * from rifles").map { |rifle| get_hash(rifle, RIFLE_COLUMNS)}
+	rifles.each_with_index do |rifle, index| 
+		row << Telegram::Bot::Types::InlineKeyboardButton.new(text: rifle[:title], callback_data: "#{command}_#{rifle[:id]}")
+		if (index + 1) % 3 == 0
+			btns << row
+			row = []
+		end
+	end
+	btns << row
+	btns << Telegram::Bot::Types::InlineKeyboardButton.new(text: 'Отвязать', callback_data: "#{command}_0") if command == 'linkRifleToUser'
+	btns << Telegram::Bot::Types::InlineKeyboardButton.new(text: 'Назад', callback_data: "back") if command == 'rifleInfo'
 	Telegram::Bot::Types::InlineKeyboardMarkup.new(inline_keyboard: btns)	
+end
+
+def set_rifle_condition(id, condition)
+	@db.execute "update rifles set condition=? where id=?", 
+										condition,
+										id  
+end
+
+def get_balance
+	debit = @db.execute("select sum(sum) from donations").flatten.first 
+	credit = @db.execute("select sum(sum) from expenses").flatten.first 
+	debit ||= 0
+	credit ||= 0
+	debit - credit
+end
+
+def set_rifle_comment(id, text)
+	@db.execute "update rifles set comment=? where id = ?", text, id
 end
 
 def get_top_donaters
@@ -117,6 +167,10 @@ def add_donate(user_id, sum)
 	@db.execute "insert into donations (user_id, sum, created_at) values ( ?, ?, ? )", user_id, sum, Time.now.strftime("%Y-%m-%d")
 end
 
+def add_expense(text, sum)
+	@db.execute "insert into expenses (title, sum, created_at) values ( ?, ?, ? )", text, sum, Time.now.strftime("%Y-%m-%d")
+end
+
 def get_user_donations(user_id)
 	data = @db.execute "select * from donations where user_id= ? order by created_at desc limit 9 ", user_id
 	donations_list = data.map {|donate| get_hash(donate, DONATE_COLUMS)}
@@ -148,6 +202,10 @@ def reset_command(user_id)
 											user_id
 end
 
+def condition_as_emoji(status)
+	status == 1 ? EMOJI[:ok_condition] : EMOJI[:bad_condition]
+end
+
 def parse_month(date)
 	res = date.split('-')
 	"#{MONTHS[res[0].to_i]} #{res[1]} год"
@@ -156,6 +214,11 @@ end
 
 def delete_last_donate
 	@db.execute "DELETE FROM donations WHERE id = (SELECT MAX(id) FROM donations)"
+end
+
+def get_rifle(id)
+	data = @db.execute("select rifles.title, rifles.condition, rifles.comment, users.name from rifles left join users on rifles.user_id = users.id where rifles.id = ?", id).first
+	get_hash(data, [:title, :condition, :comment, :name])
 end
 
 Telegram::Bot::Client.run(token) do |bot|
@@ -173,19 +236,39 @@ Telegram::Bot::Client.run(token) do |bot|
 ########### КОЛЛБЭКИ
 			ap message.data
 
+			####################### ОРУЖИЕ #######################
 
-			if message.data == 'linkRifle'
-				bot.api.edit_message_text(message_id: message.message.message_id, chat_id: message.from.id, text: 'Выбери пользователя', reply_markup: users_btns("linkUserToRifle"))
+			if message.data == 'riflesList'
+				bot.api.edit_message_text(message_id: message.message.message_id, chat_id: message.from.id, text: 'Выбери пушку', reply_markup: rifles_btns("rifleInfo"))
 				next
 			end
 
-			if message.data =~ /linkRifleToUser_\d+/
+			if message.data =~ /rifleInfo_\d+/
 				rifle_id = message.data.slice(/\d+/)
-				user = get_user(user[:id])
-				@db.execute "update users set rifle_id=? where id=?", rifle_id, user[:object_id]
-				bot.api.edit_message_text(message_id: message.message.message_id, chat_id: message.from.id, text: 'Властвуй :3', reply_markup: menu)
-				bot.api.send_message(chat_id: message.from.id, text: 'Оружие привязано') 
-				reset_command(user[:id])
+				bot.api.edit_message_text(message_id: message.message.message_id, chat_id: message.from.id, text: 'Оружие', reply_markup: rifle_menu_btns(rifle_id))
+				next
+			end
+
+			if message.data =~ /rifleFullInfo_\d+/
+				rifle_id = message.data.slice(/\d+/)
+				rifle = get_rifle(rifle_id)
+				msg = "#{EMOJI[:gun]}#{rifle[:title]}\n"
+				msg += "\t\t\t\t\tСостояние: #{condition_as_emoji(rifle[:condition])}\n"
+				msg += "\t\t\t\t\tВладелец: \t#{EMOJI[:person]}#{rifle[:name] ||= 'отсутствует'}\n"
+				msg += "\n#{EMOJI[:comment]}Комментарий:\n\t\t\t\t\t#{rifle[:comment]}"
+				bot.api.send_message(chat_id: message.from.id, text: msg) 
+			end
+
+			if message.data =~ /changeCondition_\d+/
+				rifle_id = message.data.slice(/\d+/)
+				rifle = get_rifle(rifle_id)
+				condition = rifle[:condition] == 1 ? 0 : 1
+				set_rifle_condition(rifle_id, condition)
+				bot.api.send_message(chat_id: message.from.id, text: "Состояние изменено на #{condition_as_emoji(condition)}") 
+			end
+
+			if message.data == 'linkRifle'
+				bot.api.edit_message_text(message_id: message.message.message_id, chat_id: message.from.id, text: 'Выбери пользователя', reply_markup: users_btns("linkUserToRifle"))
 				next
 			end
 
@@ -193,20 +276,65 @@ Telegram::Bot::Client.run(token) do |bot|
 				user_id = message.data.slice(/\d+/)
 				set_user_object(user_id, user[:id])
 				bot.api.edit_message_text(message_id: message.message.message_id, chat_id: message.from.id, text: 'Выбери пушку', reply_markup: rifles_btns("linkRifleToUser"))
-			next
+				next
 			end
+
+			if message.data =~ /linkRifleToUser_\d+/
+				rifle_id = message.data.slice(/\d+/)
+				user = get_user(user[:id])
+				ap user
+				puts "RIFLE_ID: #{rifle_id.class}"
+				@db.execute "update rifles set user_id=? where user_id=?", nil, user[:object_id]
+				if rifle_id.to_i == 0
+					@db.execute "update users set rifle_id=? where id=?", nil, user[:object_id]
+				else
+					@db.execute "update users set rifle_id=? where id=?", rifle_id, user[:object_id]
+					@db.execute "update rifles set user_id=? where id=?", user[:object_id], rifle_id
+				end
+				reset_command(user[:id])				
+				bot.api.edit_message_text(message_id: message.message.message_id, chat_id: message.from.id, text: 'Властвуй :3', reply_markup: menu)
+				bot.api.send_message(chat_id: message.from.id, text: 'Изменения приняты')
+				next
+			end
+
+			if message.data =~ /setRifleComment_\d+/
+				rifle_id = message.data.slice(/\d+/)
+				set_user_command("setRifleComment", user[:id])
+				set_user_object(rifle_id, user[:id])
+				bot.api.send_message(chat_id: message.from.id, text: "Введи текст комментария") 
+				next
+			end
+
+			######################### ДОНАТ #########################
 
 			if message.data =~ /addUserDonate_\d+/
 				user_id = message.data.slice(/\d+/)
 				set_user_object(user_id, user[:id])
 				bot.api.edit_message_text(message_id: message.message.message_id, chat_id: message.from.id, text: 'Властвуй :3', reply_markup: menu)
 				bot.api.send_message(chat_id: message.from.id, text: 'Введи сумму:') 
-			next
+				next
 			end
 
 			if message.data == 'addDonate'
 				set_user_command(message.data, user[:id])
 				bot.api.edit_message_text(message_id: message.message.message_id, chat_id: message.from.id, text: 'Выбери пользователя', reply_markup: users_btns("addUserDonate"))
+				next
+			end
+
+
+			######################### РАСХОДЫ ######################
+
+			if message.data == 'addExpense'
+				set_user_command(message.data, user[:id])
+				bot.api.send_message(chat_id: message.from.id, text: 'Введи описание расхода и сумму в виде $100:') 
+				next
+			end
+
+			######################### ОБЩИЕ ########################
+
+			if message.data == 'back'
+				bot.api.edit_message_text(message_id: message.message.message_id, chat_id: message.from.id, text: 'Властвуй :3', reply_markup: menu)
+				reset_command(user[:id])
 				next
 			end
 
@@ -226,11 +354,12 @@ Telegram::Bot::Client.run(token) do |bot|
 		  	end
 
 		  	if message.text == '/userMenu'
-		    	bot.api.send_message(chat_id: message.from.id, text: 'Необходимо пройти первичную регистрацию', reply_markup: markup)
+		    	bot.api.send_message(chat_id: message.from.id, text: 'Меню обновлено', reply_markup: markup)
 		  		next
 		  	end
 
 		  	if message.text == '/adminMenu'
+		  		reset_command(user[:id])
 		    	bot.api.send_message(chat_id: message.from.id, text: 'Властвуй :3', reply_markup: menu)
 		    	next
 		  	end
@@ -245,12 +374,12 @@ Telegram::Bot::Client.run(token) do |bot|
 		  		donations = get_user_donations(user[:id])
 		  		msg = ''
 		  		donations[0].each_with_index do |donate, index|
-		  			msg += "#{index + 1}.\t\t\t\t#{donate[:created_at]}\t\t\t\t#{emoji[:money]}#{donate[:sum]}р.\n"
+		  			msg += "#{index + 1}.\t\t\t\t#{donate[:created_at]}\t\t\t\t#{EMOJI[:money]}#{donate[:sum]}р.\n"
 		  		end
 		  		if msg.empty?
 		  			msg = 'Из-за таких, как ты у нас нет шаров!' 
 		  		else
-		  			msg += "\nЗа все время вдоначено #{emoji[:money]}#{donations[1]}\n"
+		  			msg += "\nЗа все время вдоначено #{EMOJI[:money]}#{donations[1]}\n"
 		  		end
 		    	bot.api.send_message(chat_id: message.from.id, text: msg)
 		    	next
@@ -258,15 +387,15 @@ Telegram::Bot::Client.run(token) do |bot|
 
 		  	if message.text == 'Профиль'
 		  		user_info = get_user_info(user[:id])
-		  		msg = "#{emoji[:cheburek]}Позывной: #{user_info[:name]}\n"
-		  		msg += "#{emoji[:phone]}Телефон: #{phone_format(user_info[:phone])}\n"
-		  		msg += "#{emoji[:gun]}Оружие: #{user_info[:rifle_title] ||= 'не закреплено' }"
+		  		msg = "#{EMOJI[:cheburek]}Позывной: #{user_info[:name]}\n"
+		  		msg += "#{EMOJI[:phone]}Телефон: #{phone_format(user_info[:phone])}\n"
+		  		msg += "#{EMOJI[:gun]}Оружие: #{user_info[:rifle_title] ||= 'не закреплено' }"
 		  		if user_info[:rifle_status].nil?
-		  		msg += "\n"
+		  			msg += "\n"
 		  		else
-		  		msg += "\t[состояние:#{user_info[:rifle_status] == 1 ? emoji[:ok_condition] : emoji[:bad_condition]}]\n"
+		  			msg += "\t[состояние:#{condition_as_emoji(user_info[:rifle_status])}]\n"
 		  		end
-		  		msg += "#{emoji[:department]}Отеделение: #{user_info[:department]}"
+		  		msg += "#{EMOJI[:department]}Отеделение: #{user_info[:department]}"
 		    	bot.api.send_message(chat_id: message.from.id, text: msg)
 		    	next
 		  	end
@@ -274,13 +403,13 @@ Telegram::Bot::Client.run(token) do |bot|
 		  	if message.text == 'Топ донатеров'
 		  		data = get_top_donaters
 		  		msg = ''
-		  		msg += "\n#{emoji[:calendar]}ТОП по месяцам\n"
+		  		msg += "\n#{EMOJI[:calendar]}ТОП по месяцам\n"
 		  		data[0].each_with_index do |donate, index|
-		  			msg += "\t#{emoji[:mark]}#{parse_month(donate[:month])}\n\t\t\t#{emoji[:person]}#{donate[:name]}\t\t\t\t(#{emoji[:money]}#{donate[:sum]}р.)\n"
+		  			msg += "\t#{EMOJI[:mark]}#{parse_month(donate[:month])}\n\t\t\t#{EMOJI[:person]}#{donate[:name]}\t\t\t\t(#{EMOJI[:money]}#{donate[:sum]}р.)\n"
 		  		end
-		  		msg += "\n#{emoji[:cup]}ТОП общий\n"
+		  		msg += "\n#{EMOJI[:cup]}ТОП общий\n"
 		  		data[1].each_with_index do |donate, index|
-		  			msg += "\t\t#{index + 1}. #{donate[:name]}\t\t\t\t(#{emoji[:money]}#{donate[:sum]}р.)\n"
+		  			msg += "\t\t#{index + 1}. #{donate[:name]}\t\t\t\t(#{EMOJI[:money]}#{donate[:sum]}р.)\n"
 		  		end
 		    	bot.api.send_message(chat_id: message.from.id, text: msg)
 		  		next
@@ -329,8 +458,31 @@ Telegram::Bot::Client.run(token) do |bot|
 				object = get_user(user[:object_id])
 				reset_command(user[:id])
 				bot.api.send_message(chat_id: message.from.id, text: "#{object[:name]} задонатил #{message.text}р. \n Нажми \/delLast что-бы удалить последний донат") 
-				bot.api.send_message(chat_id: object[:chat_id], text: "#{object[:name]}, спасибо за взнос!#{emoji[:kiss]}") 
+				bot.api.send_message(chat_id: object[:chat_id], text: "#{object[:name]}, спасибо за взнос!#{EMOJI[:kiss]}") 
 				next
+			end
+
+			if user[:command] == 'setRifleComment' and user[:object_id] != nil
+				set_rifle_comment(user[:object_id], message.text)
+				reset_command(user[:id])
+				bot.api.send_message(chat_id: message.from.id, text: "Комментарий добавлен") 
+				next
+			end
+
+			if user[:command] = 'addExpense'
+				data = message.text.split('$')
+				add_expense(data[0], data[1])
+				msg = "Мы всадили #{EMOJI[:money]}#{data[1]}р.\n"
+				msg += "Цель:\t#{data[0]}\n"
+				balance = get_balance
+				if balance > 0
+					msg += "Еще можно просадить #{EMOJI[:money]}#{balance}р."
+				elsif balance == 0
+					msg += "Денег больше нет!!!#{EMOJI[:cry]}"
+				else
+					msg += "Поздравляю теперь вы должны мне #{EMOJI[:money]}#{balance.abs}р.! Из-за вас я никогда не пройду пятую персону...#{EMOJI[:cry]}"
+				end
+				bot.api.send_message(chat_id: message.from.id, text: msg) 
 			end
 
 ########### ИНИЦИАЛИЗАЦИЯ ПОЛЬЗОВАТЕЛЯ

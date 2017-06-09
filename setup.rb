@@ -44,6 +44,15 @@ rows = db.execute <<-SQL
   );
 SQL
 
+rows = db.execute <<-SQL
+  create table expenses (
+    ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    title varchar(250),
+    sum integer,
+    created_at date
+  );
+SQL
+
 
 #ОТДЕЛЕНИЯ
 db.execute "insert into departments (title) values ('Ванильный Урал')"
