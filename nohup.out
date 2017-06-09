@@ -1,0 +1,170 @@
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type callback
+type callback
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type callback
+type callback
+type message
+type message
+type callback
+type callback
+type message
+type message
+type callback
+type callback
+type message
+type message
+type message
+type message
+/home/softs/.rvm/rubies/ruby-2.2.5/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require': cannot load such file -- telegram/bot (LoadError)
+	from /home/softs/.rvm/rubies/ruby-2.2.5/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from main.rb:1:in `<main>'
+main.rb:237:in `block (2 levels) in <main>': undefined method `ap' for main:Object (NoMethodError)
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:38:in `block in fetch_updates'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `each'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `fetch_updates'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:25:in `listen'
+	from main.rb:225:in `block in <main>'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:18:in `run'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:8:in `run'
+	from main.rb:224:in `<main>'
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type inline query
+type inline query
+type inline query
+type message
+type callback
+main.rb:237:in `block (2 levels) in <main>': undefined method `ap' for main:Object (NoMethodError)
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:38:in `block in fetch_updates'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `each'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `fetch_updates'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:25:in `listen'
+	from main.rb:225:in `block in <main>'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:18:in `run'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:8:in `run'
+	from main.rb:224:in `<main>'
+type callback
+main.rb:284:in `block (2 levels) in <main>': undefined method `ap' for main:Object (NoMethodError)
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:38:in `block in fetch_updates'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `each'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `fetch_updates'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:25:in `listen'
+	from main.rb:225:in `block in <main>'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:18:in `run'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:8:in `run'
+	from main.rb:224:in `<main>'
+type callback
+type message
+type message
+type callback
+type callback
+type callback
+RIFLE_ID: String
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+main.rb:162:in `get_hash': undefined method `to_h' for #<Array:0x000000021103d0> (NoMethodError)
+	from main.rb:225:in `block (2 levels) in <main>'
+	from /home/softs/.rvm/gems/ruby-2.0.0-p643@rails414/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:38:in `block in fetch_updates'
+	from /home/softs/.rvm/gems/ruby-2.0.0-p643@rails414/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `each'
+	from /home/softs/.rvm/gems/ruby-2.0.0-p643@rails414/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `fetch_updates'
+	from /home/softs/.rvm/gems/ruby-2.0.0-p643@rails414/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:25:in `listen'
+	from main.rb:224:in `block in <main>'
+	from /home/softs/.rvm/gems/ruby-2.0.0-p643@rails414/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:18:in `run'
+	from /home/softs/.rvm/gems/ruby-2.0.0-p643@rails414/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:8:in `run'
+	from main.rb:223:in `<main>'
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type callback
+type callback
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type callback
+type callback
+type message
+type message
+type callback
+type callback
+type callback
+RIFLE_ID: String
+type callback
+type callback
+type callback
+RIFLE_ID: String
+type callback
+type callback
+type callback
+type callback
+type message
+type message
+type message
+type callback
+type message
+type callback
+type callback
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type callback

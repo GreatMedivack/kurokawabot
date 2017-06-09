@@ -1,5 +1,4 @@
 require 'telegram/bot'
-require 'ap'
 token = ''
 
 require 'sqlite3'
@@ -82,6 +81,7 @@ def users_btns(command)
 		end
 	end
 	btns << row
+	btns << Telegram::Bot::Types::InlineKeyboardButton.new(text: 'Назад', callback_data: "back")
 	Telegram::Bot::Types::InlineKeyboardMarkup.new(inline_keyboard: btns)	
 end
 
@@ -234,7 +234,6 @@ Telegram::Bot::Client.run(token) do |bot|
 		  	puts "type callback"
 
 ########### КОЛЛБЭКИ
-			ap message.data
 
 			####################### ОРУЖИЕ #######################
 
@@ -282,7 +281,6 @@ Telegram::Bot::Client.run(token) do |bot|
 			if message.data =~ /linkRifleToUser_\d+/
 				rifle_id = message.data.slice(/\d+/)
 				user = get_user(user[:id])
-				ap user
 				puts "RIFLE_ID: #{rifle_id.class}"
 				@db.execute "update rifles set user_id=? where user_id=?", nil, user[:object_id]
 				if rifle_id.to_i == 0
@@ -419,7 +417,7 @@ Telegram::Bot::Client.run(token) do |bot|
 
 		  	if user[:command] == 'changeName'
 
-		  		if not message.text =~ /[а-я А-Я]+/
+		  		if (not message.text =~ /[а-я А-Я]+/) || (message.text == 'Далее')
 		    		bot.api.send_message(chat_id: message.from.id, text: 'Допустима только кириллица! \0')
 		  			next
 		  		end
@@ -437,7 +435,7 @@ Telegram::Bot::Client.run(token) do |bot|
 
 		  	if user[:command] == 'changePhone'
 
-		  		if message.text.gsub(/\D/,'').size != 11
+		  		if message.text.gsub(/\D/,'').size != 11 || message.text == 'Далее'
 		    		bot.api.send_message(chat_id: message.from.id, text: 'В формате +7 ХХХ ХХХ ХХ ХХ')
 		  			next
 		  		end
@@ -469,7 +467,7 @@ Telegram::Bot::Client.run(token) do |bot|
 				next
 			end
 
-			if user[:command] = 'addExpense'
+			if user[:command] == 'addExpense'
 				data = message.text.split('$')
 				add_expense(data[0], data[1])
 				msg = "Мы всадили #{EMOJI[:money]}#{data[1]}р.\n"
@@ -483,6 +481,7 @@ Telegram::Bot::Client.run(token) do |bot|
 					msg += "Поздравляю теперь вы должны мне #{EMOJI[:money]}#{balance.abs}р.! Из-за вас я никогда не пройду пятую персону...#{EMOJI[:cry]}"
 				end
 				bot.api.send_message(chat_id: message.from.id, text: msg) 
+				next
 			end
 
 ########### ИНИЦИАЛИЗАЦИЯ ПОЛЬЗОВАТЕЛЯ
