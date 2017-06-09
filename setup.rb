@@ -70,8 +70,8 @@ db.execute "insert into rifles (title, condition, comment) values ('Г36Ц',    
 db.execute "insert into rifles (title, condition, comment) values ('АС ВАЛ (силумин)',    1, 'У магазина толоман зуб, отломался приклад, отломалась мушка. ')"
 db.execute "insert into rifles (title, condition, comment) values ('АС ВАЛ (сталь)',      1, 'Слетает переводчик огня прекращая стрельбу. ')"
 db.execute "insert into rifles (title, condition, comment) values ('Г3',                  0, 'Разобрана на запчасти')"
-db.execute "insert into rifles (title, condition, comment) values ('МП5 колин',           0, 'Треснули стенки гирбокса')"
-db.execute "insert into rifles (title, condition, comment) values ('М16',                 0, 'Треснули стенки гербокса, отвалилось крепление штыка, разваливается цивье, перекосило мушку и вообще он говно.')"
-
+db.execute "insert into rifles (title, condition, comment) values ('ХК-94',	          0, 'Треснули стенки гирбокса')"
+db.execute "insert into rifles (title, condition, comment) values ('М4A1',                0, 'Треснули стенки гербокса, отвалилось крепление штыка, разваливается цивье, перекосило мушку и вообще он говно.')"
+db.execute "insert into rifles (title, condition, comment) values ('Г36',                 1, 'Награда за совместный просмотр кетайских мультиков про пидоров.')"
 
 
