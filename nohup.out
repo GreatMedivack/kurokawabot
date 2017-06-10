@@ -168,3 +168,466 @@ type message
 type message
 type message
 type callback
+/home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:70:in `call': Telegram API has returned the error. (ok: "false", error_code: "404", description: "Not Found") (Telegram::Bot::Exceptions::ResponseError)
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:54:in `method_missing'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:30:in `fetch_updates'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:25:in `listen'
+	from main.rb:261:in `block in <main>'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:18:in `run'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:8:in `run'
+	from main.rb:260:in `<main>'
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type callback
+type callback
+type callback
+type callback
+type message
+type message
+type callback
+type message
+type callback
+type callback
+type callback
+type callback
+type message
+type message
+type message
+type message
+type callback
+type message
+type message
+type callback
+type message
+type message
+type callback
+type callback
+type message
+type message
+type callback
+type callback
+type callback
+type callback
+type callback
+type callback
+type callback
+type callback
+type callback
+type callback
+type callback
+type callback
+type message
+type callback
+type callback
+type callback
+type callback
+type callback
+type callback
+type callback
+type message
+/home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:70:in `call': Telegram API has returned the error. (ok: "false", error_code: "403", description: "Forbidden: bot can't initiate conversation with a user") (Telegram::Bot::Exceptions::ResponseError)
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:54:in `method_missing'
+	from main.rb:264:in `block (2 levels) in <main>'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:38:in `block in fetch_updates'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `each'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `fetch_updates'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:25:in `listen'
+	from main.rb:261:in `block in <main>'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:18:in `run'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:8:in `run'
+	from main.rb:260:in `<main>'
+type callback
+type message
+type callback
+type message
+type callback
+type callback
+type message
+type message
+type message
+type callback
+type callback
+type callback
+type callback
+type message
+type message
+type message
+type message
+type message
+type callback
+type message
+type message
+type callback
+type callback
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+/home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:70:in `call': Telegram API has returned the error. (ok: "false", error_code: "403", description: "Forbidden: bot can't initiate conversation with a user") (Telegram::Bot::Exceptions::ResponseError)
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:54:in `method_missing'
+	from main.rb:264:in `block (2 levels) in <main>'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:38:in `block in fetch_updates'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `each'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `fetch_updates'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:25:in `listen'
+	from main.rb:261:in `block in <main>'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:18:in `run'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:8:in `run'
+	from main.rb:260:in `<main>'
+type callback
+type callback
+type callback
+type callback
+type callback
+type message
+type message
+type callback
+type callback
+type callback
+type callback
+type callback
+type callback
+type callback
+type callback
+type callback
+type callback
+type callback
+/home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:70:in `call': Telegram API has returned the error. (ok: "false", error_code: "400", description: "Bad Request: group chat was migrated to a supergroup chat", parameters: "{"migrate_to_chat_id"=>-1001133247548}") (Telegram::Bot::Exceptions::ResponseError)
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:54:in `method_missing'
+	from main.rb:417:in `block (2 levels) in <main>'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:38:in `block in fetch_updates'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `each'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `fetch_updates'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:25:in `listen'
+	from main.rb:261:in `block in <main>'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:18:in `run'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:8:in `run'
+	from main.rb:260:in `<main>'
+type callback
+type callback
+type callback
+type callback
+type callback
+type callback
+type callback
+type callback
+type callback
+type callback
+type callback
+type callback
+type message
+type message
+type message
+type message
+type message
+type message
+/home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:70:in `call': Telegram API has returned the error. (ok: "false", error_code: "400", description: "Bad Request: group chat was migrated to a supergroup chat", parameters: "{"migrate_to_chat_id"=>-1001133247548}") (Telegram::Bot::Exceptions::ResponseError)
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:54:in `method_missing'
+	from main.rb:417:in `block (2 levels) in <main>'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:38:in `block in fetch_updates'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `each'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `fetch_updates'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:25:in `listen'
+	from main.rb:261:in `block in <main>'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:18:in `run'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:8:in `run'
+	from main.rb:260:in `<main>'
+type message
+/home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:70:in `call': Telegram API has returned the error. (ok: "false", error_code: "400", description: "Bad Request: can't parse inline keyboard button: Can't find field "text"") (Telegram::Bot::Exceptions::ResponseError)
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:54:in `method_missing'
+	from main.rb:273:in `block (2 levels) in <main>'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:38:in `block in fetch_updates'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `each'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `fetch_updates'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:25:in `listen'
+	from main.rb:261:in `block in <main>'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:18:in `run'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:8:in `run'
+	from main.rb:260:in `<main>'
+type message
+type message
+type message
+type callback
+type callback
+type callback
+type message
+type message
+type callback
+type callback
+type message
+type message
+type message
+type message
+type callback
+/home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:70:in `call': Telegram API has returned the error. (ok: "false", error_code: "400", description: "Bad Request: can't parse inline keyboard button: Can't find field "text"") (Telegram::Bot::Exceptions::ResponseError)
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:54:in `method_missing'
+	from main.rb:273:in `block (2 levels) in <main>'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:38:in `block in fetch_updates'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `each'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `fetch_updates'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:25:in `listen'
+	from main.rb:261:in `block in <main>'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:18:in `run'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:8:in `run'
+	from main.rb:260:in `<main>'
+type callback
+/home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:70:in `call': Telegram API has returned the error. (ok: "false", error_code: "400", description: "Bad Request: message is not modified") (Telegram::Bot::Exceptions::ResponseError)
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:54:in `method_missing'
+	from main.rb:288:in `block (2 levels) in <main>'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:38:in `block in fetch_updates'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `each'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `fetch_updates'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:25:in `listen'
+	from main.rb:261:in `block in <main>'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:18:in `run'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:8:in `run'
+	from main.rb:260:in `<main>'
+type message
+type message
+type message
+type message
+type message
+type callback
+type callback
+type callback
+type callback
+type callback
+type callback
+type message
+type message
+type message
+type message
+type message
+type callback
+type callback
+type callback
+type callback
+type callback
+type callback
+type message
+type callback
+type callback
+type callback
+type callback
+type callback
+type message
+type callback
+type callback
+type callback
+type callback
+type callback
+type callback
+type callback
+type callback
+type callback
+type callback
+main.rb:172:in `get_hash': undefined method `to_h' for #<Array:0x00000001389680> (NoMethodError)
+	from main.rb:424:in `block (2 levels) in <main>'
+	from /home/softs/.rvm/gems/ruby-2.0.0-p643@rails414/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:38:in `block in fetch_updates'
+	from /home/softs/.rvm/gems/ruby-2.0.0-p643@rails414/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `each'
+	from /home/softs/.rvm/gems/ruby-2.0.0-p643@rails414/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `fetch_updates'
+	from /home/softs/.rvm/gems/ruby-2.0.0-p643@rails414/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:25:in `listen'
+	from main.rb:261:in `block in <main>'
+	from /home/softs/.rvm/gems/ruby-2.0.0-p643@rails414/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:18:in `run'
+	from /home/softs/.rvm/gems/ruby-2.0.0-p643@rails414/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:8:in `run'
+	from main.rb:260:in `<main>'
+type message
+/home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:70:in `call': Telegram API has returned the error. (ok: "false", error_code: "400", description: "Bad Request: message is not modified") (Telegram::Bot::Exceptions::ResponseError)
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:54:in `method_missing'
+	from main.rb:288:in `block (2 levels) in <main>'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:38:in `block in fetch_updates'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `each'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `fetch_updates'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:25:in `listen'
+	from main.rb:261:in `block in <main>'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:18:in `run'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:8:in `run'
+	from main.rb:260:in `<main>'
+type message
+type callback
+/home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:70:in `call': Telegram API has returned the error. (ok: "false", error_code: "400", description: "Bad Request: message is not modified") (Telegram::Bot::Exceptions::ResponseError)
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:54:in `method_missing'
+	from main.rb:288:in `block (2 levels) in <main>'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:38:in `block in fetch_updates'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `each'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `fetch_updates'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:25:in `listen'
+	from main.rb:261:in `block in <main>'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:18:in `run'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:8:in `run'
+	from main.rb:260:in `<main>'
+type callback
+/home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:70:in `call': Telegram API has returned the error. (ok: "false", error_code: "400", description: "Bad Request: message is not modified") (Telegram::Bot::Exceptions::ResponseError)
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:54:in `method_missing'
+	from main.rb:288:in `block (2 levels) in <main>'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:38:in `block in fetch_updates'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `each'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `fetch_updates'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:25:in `listen'
+	from main.rb:261:in `block in <main>'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:18:in `run'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:8:in `run'
+	from main.rb:260:in `<main>'
+type callback
+/home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:70:in `call': Telegram API has returned the error. (ok: "false", error_code: "400", description: "Bad Request: message is not modified") (Telegram::Bot::Exceptions::ResponseError)
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:54:in `method_missing'
+	from main.rb:390:in `block (2 levels) in <main>'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:38:in `block in fetch_updates'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `each'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `fetch_updates'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:25:in `listen'
+	from main.rb:261:in `block in <main>'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:18:in `run'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:8:in `run'
+	from main.rb:260:in `<main>'
+type callback
+type callback
+type message
+type message
+type message
+type message
+type callback
+type callback
+type message

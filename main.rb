@@ -28,7 +28,7 @@ EMOJI = {
 		bank: "\u{1F3E6}"
 }
 
-GROUP_CHAT_ID = -249466268
+GROUP_CHAT_ID = -1001133247548
 
 MONTHS = [nil, "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"]
 
@@ -81,7 +81,7 @@ end
 def users_btns(command)
 	btns = []
 	row = []
-	users = @db.execute("select * from users").map { |user| get_hash(user, USER_COLUMNS)}
+	users = @db.execute("select * from users where registred = ?", 1).map { |user| get_hash(user, USER_COLUMNS)}
 	users.each_with_index do |user, index|
 		row << Telegram::Bot::Types::InlineKeyboardButton.new(text: user[:name], callback_data: "#{command}_#{user[:id]}")
 		if (index + 1) % 3 == 0
@@ -117,7 +117,7 @@ def rifles_btns(command)
 	end
 	btns << row
 	btns << Telegram::Bot::Types::InlineKeyboardButton.new(text: 'Отвязать', callback_data: "#{command}_0") if command == 'linkRifleToUser'
-	btns << Telegram::Bot::Types::InlineKeyboardButton.new(text: 'Назад', callback_data: "back") if command == 'rifleInfo'
+	btns << Telegram::Bot::Types::InlineKeyboardButton.new(text: 'Назад', callback_data: "back")
 	Telegram::Bot::Types::InlineKeyboardMarkup.new(inline_keyboard: btns)
 end
 
@@ -259,16 +259,12 @@ end
 
 Telegram::Bot::Client.run(token) do |bot|
 	bot.listen do |message|
-		  user = get_hash(@db.execute("select * from users where chat_id = ?", message.from.id).first, USER_COLUMNS)
-		  if user.empty? and message.text != '/start'
-				bot.api.send_message(chat_id: message.from.id, text: 'Я тебя не знаю! набери /start для начала')
-			 	next
-		  end
-
+		begin	
 		  case message
 		  when Telegram::Bot::Types::CallbackQuery
 		  	puts "type callback"
 
+		  	user = get_hash(@db.execute("select * from users where chat_id = ?", message.from.id).first, USER_COLUMNS)
 ########### КОЛЛБЭКИ
 
 
@@ -400,6 +396,7 @@ Telegram::Bot::Client.run(token) do |bot|
 		  when Telegram::Bot::Types::InlineQuery
 		  	puts "type inline query"
 
+		  user = get_hash(@db.execute("select * from users where chat_id = ?", message.from.id).first, USER_COLUMNS)
 		  when Telegram::Bot::Types::Message
 		  	puts "type message"
 
@@ -425,6 +422,12 @@ Telegram::Bot::Client.run(token) do |bot|
 				next if message.chat.id == GROUP_CHAT_ID
 		  	# next if message.chat.id == -34153783
 
+		  user = get_hash(@db.execute("select * from users where chat_id = ?", message.from.id).first, USER_COLUMNS)
+		  if user.empty? and message.text != '/start'
+				bot.api.send_message(chat_id: message.from.id, text: 'Я тебя не знаю! набери /start для начала')
+			 	next
+		  end
+
 ########### ПРЯМЫЕ КОМАНДЫ
 
 		  	if message.text == '/start'
@@ -438,7 +441,7 @@ Telegram::Bot::Client.run(token) do |bot|
 		  		next
 		  	end
 
-		  	if message.text == '/adminMenu'
+		  	if message.text == '/adminMenu' and message.from.id == ADMIN_ID
 		  		reset_command(user[:id])
 		    	bot.api.send_message(chat_id: message.from.id, text: 'Властвуй :3', reply_markup: menu)
 		    	next
@@ -549,6 +552,7 @@ Telegram::Bot::Client.run(token) do |bot|
 				end
 
 				data = message.text.split('$')
+				next if data.size != 2
 				data[1].gsub!(/\D/,'')
 				if data[1] == ''
 					bot.api.send_message(chat_id: message.from.id, text: "ЦЫФРЫ БЛИЯТЬ!")
@@ -600,5 +604,8 @@ Telegram::Bot::Client.run(token) do |bot|
 		  	end
 
 		end
+rescue
+next
+end
 	end
 end
