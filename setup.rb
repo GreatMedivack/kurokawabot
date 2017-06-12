@@ -53,6 +53,15 @@ rows = db.execute <<-SQL
   );
 SQL
 
+rows = db.execute <<-SQL
+  create table votes (
+    ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    voted varchar(250),
+    button_text varchar(250),
+    message_id integer
+  );
+SQL
+
 
 #ОТДЕЛЕНИЯ
 db.execute "insert into departments (title) values ('Ванильный Урал')"

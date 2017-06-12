@@ -44,7 +44,9 @@ main_menu =	[
 	        [Telegram::Bot::Types::InlineKeyboardButton.new(text: 'Оружие', callback_data: 'riflesList'),
 	        Telegram::Bot::Types::InlineKeyboardButton.new(text: 'Привязка оружия', callback_data: 'linkRifle')],
 					[Telegram::Bot::Types::InlineKeyboardButton.new(text: 'Объявление', callback_data: 'announcement'),
-	        Telegram::Bot::Types::InlineKeyboardButton.new(text: 'Люди', callback_data: 'profilesList')]
+	        Telegram::Bot::Types::InlineKeyboardButton.new(text: 'Люди', callback_data: 'profilesList')],
+			Telegram::Bot::Types::InlineKeyboardButton.new(text: 'Опрос', callback_data: 'makeVote'),
+
 			]
 menu = Telegram::Bot::Types::InlineKeyboardMarkup.new(inline_keyboard: main_menu)
 
@@ -53,8 +55,49 @@ markup = Telegram::Bot::Types::ReplyKeyboardMarkup.new(keyboard: user_menu, one_
 next_step = Telegram::Bot::Types::ReplyKeyboardMarkup.new(keyboard: [['Далее']], one_time_keyboard: true, resize_keyboard: true)
 done = Telegram::Bot::Types::ReplyKeyboardMarkup.new(keyboard: [['Готово']], one_time_keyboard: true, resize_keyboard: true)
 
+def create_vote_btn(text)
+	puts "BUTTON CREATE"
+	btns = text.split(',')
+	@db.execute "insert into votes (voted, button_text) values ( ?, ? )", "[#{('[],'*3)[0..-2]}]", text
+	id = @db.execute("select max(id) from votes").flatten.first
+	keyboard = []
+	btns.each_with_index { |btn, index| keyboard << Telegram::Bot::Types::InlineKeyboardButton.new(text: btns[index], callback_data: "vote_#{id}_#{index}")}
+	[Telegram::Bot::Types::InlineKeyboardMarkup.new(inline_keyboard: keyboard), id]
+end
+
+def update_vote_btn(id, text, users)
+	btns = text.split(',')
+	keyboard = []
+	btns.each_with_index do |btn, index|
+		keyboard << [Telegram::Bot::Types::InlineKeyboardButton.new(text: "#{btn} (#{users[index].count})", callback_data: "vote_#{id}_#{index}")]
+	end
+	Telegram::Bot::Types::InlineKeyboardMarkup.new(inline_keyboard: keyboard)
+end
+
+def voted_users(id, chat_id, index)
+	data = @db.execute("select voted, button_text from votes where id = ?", id).first
+	users = string_to_array(data[0])
+	text = data[1].split(',')
+	new_users = [] 
+	users.each { |arr| new_users << arr.dup}
+	unless new_users[index.to_i].include? chat_id
+		new_users.each {|arr| arr.delete(chat_id)}
+		new_users[index.to_i] << chat_id
+		@db.execute "update votes set voted = ? where id = ?", new_users.inspect, id
+	end
+	users == new_users ? nil : {users: new_users, text: text.join(',')}
+end
+
 def user_not_exist?(id)
 	(@db.execute "select * from users where chat_id = ?", id).empty?
+end
+
+def string_to_array(string)
+	array = string.split(/],/).map do |arr|
+		arr.gsub!(/\[|\]/,'')
+		arr.split(',').map { |item| item.to_i}
+	end
+	array.each {|arr| arr.delete(0)}
 end
 
 def get_user_info(user_id)
@@ -72,6 +115,12 @@ end
 def get_user(user_id)
 	data = @db.execute("select * from users where id = ?", user_id).first
 	get_hash(data, USER_COLUMNS)
+end
+
+def get_user_by_chat_id(id)
+	data = @db.execute("select * from users where chat_id = ?", id).first
+	user = get_hash(data, USER_COLUMNS)
+	user.empty? ? {} : user
 end
 
 def clear_command(user_id)
@@ -215,6 +264,30 @@ def condition_as_emoji(status)
 	status == 1 ? EMOJI[:ok_condition] : EMOJI[:bad_condition]
 end
 
+def get_voters(id, text)
+	data = @db.execute("select voted, message_id from votes where id = ?", id).first
+	variants = text.split(',')
+	vote_users = string_to_array(data[0])
+	count = 0
+	msg = "Результаты:\n"
+	vote_users.each_with_index do |users, index|
+		tmp_msg = "#{variants[index]}:\n"
+		users.each do |id| 
+			user = get_user_by_chat_id(id)
+			if user.empty?
+				count += 1
+			else
+				tmp_msg += "\t\t\t\t#{user[:name]}\n"
+			end
+		end
+		tmp_msg += "\t\t\t\t#{count} без регистрации\n" if count > 0
+		tmp_msg += "\t\t\t\t-------\n" if tmp_msg == "#{variants[index]}:\n"
+		count = 0
+		msg += tmp_msg
+	end
+	msg
+end
+
 def parse_month(date)
 	res = date.split('-')
 	"#{MONTHS[res[0].to_i]} #{res[1]} год"
@@ -263,10 +336,28 @@ Telegram::Bot::Client.run(token) do |bot|
 		  case message
 		  when Telegram::Bot::Types::CallbackQuery
 		  	puts "type callback"
+		  	puts "CALLBACK DATA: #{message.data}"
+		  	user = get_user_by_chat_id(message.from.id)
 
-		  	user = get_hash(@db.execute("select * from users where chat_id = ?", message.from.id).first, USER_COLUMNS)
 ########### КОЛЛБЭКИ
 
+			####################### ГОЛОСОВАНИЕ ##################
+
+			if message.data =~ /vote_\d+_\d+/
+				data = message.data.split('_')
+				vote_id = data[1]
+				btn_index = data[2]
+				res = voted_users(vote_id, message.from.id, btn_index)
+				res_msg = @db.execute("select message_id from votes where id = ? ", vote_id).flatten.first
+				bot.api.edit_message_text(message_id: message.message.message_id, chat_id: GROUP_CHAT_ID, text: message.message.text, reply_markup: update_vote_btn(vote_id, res[:text], res[:users])) unless res.nil?
+				bot.api.edit_message_text(message_id: res_msg, chat_id: GROUP_CHAT_ID, text: get_voters(vote_id, res[:text])) unless res.nil?
+				next
+			end
+
+			if message.data == 'makeVote'
+				set_user_command(message.data, user[:id])
+				bot.api.send_message(chat_id: message.from.id, text: 'Текст сообщения btn_text:Текст кнопки')
+			end
 
 			####################### ЛЮДИ  ########################
 
@@ -395,38 +486,42 @@ Telegram::Bot::Client.run(token) do |bot|
 
 		  when Telegram::Bot::Types::InlineQuery
 		  	puts "type inline query"
-
-		  user = get_hash(@db.execute("select * from users where chat_id = ?", message.from.id).first, USER_COLUMNS)
+		  	user = get_user_by_chat_id(message.from.id)
+		  
 		  when Telegram::Bot::Types::Message
 		  	puts "type message"
 
-				if message.text == '/balance'
-					balance = get_balance
-					msg = ''
-					if balance > 0
-						msg =+ "На наших счетах в литровой банке #{EMOJI[:money]}#{balance}р. #{EMOJI[:bank]}"
-					elsif balance == 0
-						msg =+ "Денег нет. Вы держитесь здесь, вам всего доброго, хорошего настроения и здоровья"
-					else
-						msg =+ "Ваше содержание обходится мне в #{balance.abs}р. #{EMOJI[:cry]}#{EMOJI[:cry]}#{EMOJI[:cry]}"
-					end
-					bot.api.send_message(chat_id: GROUP_CHAT_ID, text: msg)
-					bot.api.send_sticker(chat_id: GROUP_CHAT_ID, sticker: "CAADAgADhAADlY7QB4iSvZGnprH0Ag") if balance == 0
+			if message.text == '/balance'
+				balance = get_balance
+				msg = ''
+				if balance > 0
+					msg =+ "На наших счетах в литровой банке #{EMOJI[:money]}#{balance}р. #{EMOJI[:bank]}"
+				elsif balance == 0
+					msg =+ "Денег нет. Вы держитесь здесь, вам всего доброго, хорошего настроения и здоровья"
+				else
+					msg =+ "Ваше содержание обходится мне в #{balance.abs}р. #{EMOJI[:cry]}#{EMOJI[:cry]}#{EMOJI[:cry]}"
 				end
+				bot.api.send_message(chat_id: GROUP_CHAT_ID, text: msg)
+				bot.api.send_sticker(chat_id: GROUP_CHAT_ID, sticker: "CAADAgADhAADlY7QB4iSvZGnprH0Ag") if balance == 0
+			end
 
-				if message.text == '/donaters'
-					bot.api.send_message(chat_id: GROUP_CHAT_ID, text: generate_top_donat)
-					next
-				end
+			if message.text == '/donaters'
+				bot.api.send_message(chat_id: GROUP_CHAT_ID, text: generate_top_donat)
+				next
+			end
 
-				next if message.chat.id == GROUP_CHAT_ID
-		  	# next if message.chat.id == -34153783
+			if message.text == '/lastVoters'
 
-		  user = get_hash(@db.execute("select * from users where chat_id = ?", message.from.id).first, USER_COLUMNS)
-		  if user.empty? and message.text != '/start'
+	    		next
+			end
+
+			next if message.chat.id == GROUP_CHAT_ID
+
+			user = get_user_by_chat_id(message.from.id)
+			if user.empty? and message.text != '/start'
 				bot.api.send_message(chat_id: message.from.id, text: 'Я тебя не знаю! набери /start для начала')
 			 	next
-		  end
+			end
 
 ########### ПРЯМЫЕ КОМАНДЫ
 
@@ -573,6 +668,26 @@ Telegram::Bot::Client.run(token) do |bot|
 				next
 			end
 
+
+			if user[:command] == 'makeVote'
+				if message.text == '/cancel'
+					reset_command(user[:id])
+					next
+				end
+
+				data = message.text.split('btn_text:')
+				next if data.size != 2
+				if data[1] == '' || data[0] == ''
+					bot.api.send_message(chat_id: message.from.id, text: "Неврный формат")
+					next
+				end
+				vote_data = create_vote_btn(data[1])
+				bot.api.send_message(chat_id: GROUP_CHAT_ID, text: data[0], reply_markup: vote_data[0])
+				res = bot.api.send_message(chat_id: GROUP_CHAT_ID, text: "Никто не прожал")
+				@db.execute "update votes set message_id = ? where id = ?", res['result']['message_id'], vote_data[1]
+				next
+			end
+
 			if user[:command] == 'announcement'
 				if message.text == '/cancel'
 					reset_command(user[:id])
@@ -604,8 +719,10 @@ Telegram::Bot::Client.run(token) do |bot|
 		  	end
 
 		end
-rescue
-next
+rescue Exception => e
+	puts "error"
+	ap e
+	next
 end
 	end
 end
