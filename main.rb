@@ -1,6 +1,6 @@
 require 'telegram/bot'
 require 'awesome_print'
-token = ''
+token = '364246804:AAHvQo_UgYXFIx5_fJblbt3KbCcNB0P6fa0'
 
 require 'sqlite3'
 
@@ -50,7 +50,7 @@ main_menu =	[
 			]
 menu = Telegram::Bot::Types::InlineKeyboardMarkup.new(inline_keyboard: main_menu)
 
-user_menu = [['Топ донатеров'], ['Профиль', 'Мой донат']]
+user_menu = [['Топ донатеров', 'Мой донат'], ['Профиль', 'Список оржуия']]
 markup = Telegram::Bot::Types::ReplyKeyboardMarkup.new(keyboard: user_menu, one_time_keyboard: false, resize_keyboard: true)
 next_step = Telegram::Bot::Types::ReplyKeyboardMarkup.new(keyboard: [['Далее']], one_time_keyboard: true, resize_keyboard: true)
 done = Telegram::Bot::Types::ReplyKeyboardMarkup.new(keyboard: [['Готово']], one_time_keyboard: true, resize_keyboard: true)
@@ -151,6 +151,19 @@ def rifle_menu_btns(id)
 	        Telegram::Bot::Types::InlineKeyboardButton.new(text: 'Назад', callback_data: 'riflesList')
 			]
 	Telegram::Bot::Types::InlineKeyboardMarkup.new(inline_keyboard: btns)
+end
+
+def get_info_about_rifles
+	data = @db.execute("select rifles.title, rifles.comment, rifles.condition, users.name from rifles left join users on rifles.user_id = users.id order by rifles.condition desc, rifles.title asc")
+	rifles = data.map {|rifle| get_hash(rifle, [:title, :comment, :condition, :name])}
+	msg = "Список оружия\n\n"
+	rifles.each_with_index do |rifle, index|
+		msg += "#{EMOJI[:gun]}#{rifle[:title]}\n"
+		msg += "Cостояние\t\t\t\t#{condition_as_emoji(rifle[:condition])}\n"
+		msg += "#{EMOJI[:comment] * 2 } Комментарий по оружию#{EMOJI[:comment] * 2 }\n#{rifle[:comment]}\n"
+		msg += "Владелец\t\t\t\t#{EMOJI[:person]}#{rifle[:name] ||= 'отсутствует'}\n\n"
+	end
+	msg
 end
 
 def rifles_btns(command)
@@ -510,11 +523,6 @@ Telegram::Bot::Client.run(token) do |bot|
 				next
 			end
 
-			if message.text == '/lastVoters'
-
-	    		next
-			end
-
 			next if message.chat.id == GROUP_CHAT_ID
 
 			user = get_user_by_chat_id(message.from.id)
@@ -547,6 +555,13 @@ Telegram::Bot::Client.run(token) do |bot|
 		    	bot.api.send_message(chat_id: message.from.id, text: 'Последний донат удален')
 		    	next
 		  	end
+
+
+			if message.text == 'Список оржуия'
+				info = get_info_about_rifles
+		    	bot.api.send_message(chat_id: message.from.id, text: info)
+				next
+			end
 
 		  	if message.text == 'Мой донат'
 		  		donations = get_user_donations(user[:id])
@@ -713,6 +728,7 @@ Telegram::Bot::Client.run(token) do |bot|
 		  	end
 
 		  	if message.text == 'Готово' and user[:registred] == 0
+	ap data
 		    	bot.api.send_message(chat_id: message.from.id, text: 'Регистрация завершена', reply_markup: markup)
 		    	@db.execute "update users set registred=? where id=?", 1, user[:id]
 		    	next
@@ -720,8 +736,7 @@ Telegram::Bot::Client.run(token) do |bot|
 
 		end
 rescue Exception => e
-	puts "error"
-	ap e
+	bot.api.send_message(chat_id: ADMIN_ID, text:e)
 	next
 end
 	end
