@@ -1,6 +1,6 @@
 require 'telegram/bot'
 require 'awesome_print'
-token = '364246804:AAHvQo_UgYXFIx5_fJblbt3KbCcNB0P6fa0'
+token = ''
 
 require 'sqlite3'
 
