@@ -58,7 +58,8 @@ done = Telegram::Bot::Types::ReplyKeyboardMarkup.new(keyboard: [['Готово']
 def create_vote_btn(text)
 	puts "BUTTON CREATE"
 	btns = text.split(',')
-	@db.execute "insert into votes (voted, button_text) values ( ?, ? )", "[#{('[],'*3)[0..-2]}]", text
+	btns_count = btns.size
+	@db.execute "insert into votes (voted, button_text) values ( ?, ? )", "[#{('[],'* btns_count)[0..-2]}]", text
 	id = @db.execute("select max(id) from votes").flatten.first
 	keyboard = []
 	btns.each_with_index { |btn, index| keyboard << Telegram::Bot::Types::InlineKeyboardButton.new(text: btns[index], callback_data: "vote_#{id}_#{index}")}
@@ -76,10 +77,13 @@ end
 
 def voted_users(id, chat_id, index)
 	data = @db.execute("select voted, button_text from votes where id = ?", id).first
+	ap data
 	users = string_to_array(data[0])
 	text = data[1].split(',')
 	new_users = [] 
+	ap users
 	users.each { |arr| new_users << arr.dup}
+	ap new_users
 	unless new_users[index.to_i].include? chat_id
 		new_users.each {|arr| arr.delete(chat_id)}
 		new_users[index.to_i] << chat_id

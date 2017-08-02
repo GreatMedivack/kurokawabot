@@ -1,130 +1,729 @@
+type callback
+CALLBACK DATA: vote_2_13
+[]
 type message
+type callback
+CALLBACK DATA: profilesList
+type callback
+CALLBACK DATA: back
+type callback
+CALLBACK DATA: profilesList
+type callback
+CALLBACK DATA: back
 type message
-type message
+type callback
+CALLBACK DATA: vote_5_11
+[
+    [0] "[[], [], [98141300], [377027262], [], [], [], [], [], [], [], [], [], [], [387881985]]",
+    [1] "МП5 №666,МП5 №154,МПК,АКМ,АКСУ 75384,АК-104,АКСУ SLT,Г36Ц,АС ВАЛ Силумин,АС ВАЛ Сталь,Г3,ХК-94,М4А1,Г36,АК-105"
+]
+[
+    [ 0] [],
+    [ 1] [],
+    [ 2] [
+        [0] 98141300
+    ],
+    [ 3] [
+        [0] 377027262
+    ],
+    [ 4] [],
+    [ 5] [],
+    [ 6] [],
+    [ 7] [],
+    [ 8] [],
+    [ 9] [],
+    [10] [],
+    [11] [],
+    [12] [],
+    [13] [],
+    [14] [
+        [0] 387881985
+    ]
+]
+[
+    [ 0] [],
+    [ 1] [],
+    [ 2] [
+        [0] 98141300
+    ],
+    [ 3] [
+        [0] 377027262
+    ],
+    [ 4] [],
+    [ 5] [],
+    [ 6] [],
+    [ 7] [],
+    [ 8] [],
+    [ 9] [],
+    [10] [],
+    [11] [],
+    [12] [],
+    [13] [],
+    [14] [
+        [0] 387881985
+    ]
+]
+type callback
+CALLBACK DATA: vote_5_10
+[
+    [0] "[[], [], [98141300], [377027262], [], [], [], [], [], [], [], [262778398], [], [], [387881985]]",
+    [1] "МП5 №666,МП5 №154,МПК,АКМ,АКСУ 75384,АК-104,АКСУ SLT,Г36Ц,АС ВАЛ Силумин,АС ВАЛ Сталь,Г3,ХК-94,М4А1,Г36,АК-105"
+]
+[
+    [ 0] [],
+    [ 1] [],
+    [ 2] [
+        [0] 98141300
+    ],
+    [ 3] [
+        [0] 377027262
+    ],
+    [ 4] [],
+    [ 5] [],
+    [ 6] [],
+    [ 7] [],
+    [ 8] [],
+    [ 9] [],
+    [10] [],
+    [11] [
+        [0] 262778398
+    ],
+    [12] [],
+    [13] [],
+    [14] [
+        [0] 387881985
+    ]
+]
+[
+    [ 0] [],
+    [ 1] [],
+    [ 2] [
+        [0] 98141300
+    ],
+    [ 3] [
+        [0] 377027262
+    ],
+    [ 4] [],
+    [ 5] [],
+    [ 6] [],
+    [ 7] [],
+    [ 8] [],
+    [ 9] [],
+    [10] [],
+    [11] [
+        [0] 262778398
+    ],
+    [12] [],
+    [13] [],
+    [14] [
+        [0] 387881985
+    ]
+]
+type callback
+CALLBACK DATA: vote_5_11
+[
+    [0] "[[], [], [98141300], [377027262], [], [], [], [], [], [], [262778398], [], [], [], [387881985]]",
+    [1] "МП5 №666,МП5 №154,МПК,АКМ,АКСУ 75384,АК-104,АКСУ SLT,Г36Ц,АС ВАЛ Силумин,АС ВАЛ Сталь,Г3,ХК-94,М4А1,Г36,АК-105"
+]
+[
+    [ 0] [],
+    [ 1] [],
+    [ 2] [
+        [0] 98141300
+    ],
+    [ 3] [
+        [0] 377027262
+    ],
+    [ 4] [],
+    [ 5] [],
+    [ 6] [],
+    [ 7] [],
+    [ 8] [],
+    [ 9] [],
+    [10] [
+        [0] 262778398
+    ],
+    [11] [],
+    [12] [],
+    [13] [],
+    [14] [
+        [0] 387881985
+    ]
+]
+[
+    [ 0] [],
+    [ 1] [],
+    [ 2] [
+        [0] 98141300
+    ],
+    [ 3] [
+        [0] 377027262
+    ],
+    [ 4] [],
+    [ 5] [],
+    [ 6] [],
+    [ 7] [],
+    [ 8] [],
+    [ 9] [],
+    [10] [
+        [0] 262778398
+    ],
+    [11] [],
+    [12] [],
+    [13] [],
+    [14] [
+        [0] 387881985
+    ]
+]
+type callback
+CALLBACK DATA: vote_5_6
+[
+    [0] "[[], [], [98141300], [377027262], [], [], [], [], [], [], [], [262778398], [], [], [387881985]]",
+    [1] "МП5 №666,МП5 №154,МПК,АКМ,АКСУ 75384,АК-104,АКСУ SLT,Г36Ц,АС ВАЛ Силумин,АС ВАЛ Сталь,Г3,ХК-94,М4А1,Г36,АК-105"
+]
+[
+    [ 0] [],
+    [ 1] [],
+    [ 2] [
+        [0] 98141300
+    ],
+    [ 3] [
+        [0] 377027262
+    ],
+    [ 4] [],
+    [ 5] [],
+    [ 6] [],
+    [ 7] [],
+    [ 8] [],
+    [ 9] [],
+    [10] [],
+    [11] [
+        [0] 262778398
+    ],
+    [12] [],
+    [13] [],
+    [14] [
+        [0] 387881985
+    ]
+]
+[
+    [ 0] [],
+    [ 1] [],
+    [ 2] [
+        [0] 98141300
+    ],
+    [ 3] [
+        [0] 377027262
+    ],
+    [ 4] [],
+    [ 5] [],
+    [ 6] [],
+    [ 7] [],
+    [ 8] [],
+    [ 9] [],
+    [10] [],
+    [11] [
+        [0] 262778398
+    ],
+    [12] [],
+    [13] [],
+    [14] [
+        [0] 387881985
+    ]
+]
 type message
 type message
 type message
 type message
 type message
 type callback
+CALLBACK DATA: profilesList
 type callback
+CALLBACK DATA: back
 type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type callback
-type callback
-type message
-type message
-type callback
-type callback
-type message
-type message
-type callback
-type callback
-type message
-type message
-type message
-type message
-/home/softs/.rvm/rubies/ruby-2.2.5/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require': cannot load such file -- telegram/bot (LoadError)
-	from /home/softs/.rvm/rubies/ruby-2.2.5/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
-	from main.rb:1:in `<main>'
-main.rb:237:in `block (2 levels) in <main>': undefined method `ap' for main:Object (NoMethodError)
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:38:in `block in fetch_updates'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `each'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `fetch_updates'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:25:in `listen'
-	from main.rb:225:in `block in <main>'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:18:in `run'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:8:in `run'
-	from main.rb:224:in `<main>'
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type inline query
-type inline query
-type inline query
-type message
-type callback
-main.rb:237:in `block (2 levels) in <main>': undefined method `ap' for main:Object (NoMethodError)
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:38:in `block in fetch_updates'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `each'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `fetch_updates'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:25:in `listen'
-	from main.rb:225:in `block in <main>'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:18:in `run'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:8:in `run'
-	from main.rb:224:in `<main>'
-type callback
-main.rb:284:in `block (2 levels) in <main>': undefined method `ap' for main:Object (NoMethodError)
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:38:in `block in fetch_updates'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `each'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `fetch_updates'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:25:in `listen'
-	from main.rb:225:in `block in <main>'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:18:in `run'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:8:in `run'
-	from main.rb:224:in `<main>'
-type callback
-type message
-type message
-type callback
-type callback
-type callback
-RIFLE_ID: String
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-main.rb:162:in `get_hash': undefined method `to_h' for #<Array:0x000000021103d0> (NoMethodError)
-	from main.rb:225:in `block (2 levels) in <main>'
-	from /home/softs/.rvm/gems/ruby-2.0.0-p643@rails414/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:38:in `block in fetch_updates'
-	from /home/softs/.rvm/gems/ruby-2.0.0-p643@rails414/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `each'
-	from /home/softs/.rvm/gems/ruby-2.0.0-p643@rails414/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `fetch_updates'
-	from /home/softs/.rvm/gems/ruby-2.0.0-p643@rails414/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:25:in `listen'
-	from main.rb:224:in `block in <main>'
-	from /home/softs/.rvm/gems/ruby-2.0.0-p643@rails414/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:18:in `run'
-	from /home/softs/.rvm/gems/ruby-2.0.0-p643@rails414/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:8:in `run'
-	from main.rb:223:in `<main>'
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
+nil
 type message
 type message
 type message
 type message
 type callback
+CALLBACK DATA: profilesList
 type callback
+CALLBACK DATA: profileInfo_12
+type callback
+CALLBACK DATA: vote_5_13
+[
+    [0] "[[], [], [98141300], [377027262], [], [], [282696764], [], [], [], [], [262778398], [], [], [387881985]]",
+    [1] "МП5 №666,МП5 №154,МПК,АКМ,АКСУ 75384,АК-104,АКСУ SLT,Г36Ц,АС ВАЛ Силумин,АС ВАЛ Сталь,Г3,ХК-94,М4А1,Г36,АК-105"
+]
+[
+    [ 0] [],
+    [ 1] [],
+    [ 2] [
+        [0] 98141300
+    ],
+    [ 3] [
+        [0] 377027262
+    ],
+    [ 4] [],
+    [ 5] [],
+    [ 6] [
+        [0] 282696764
+    ],
+    [ 7] [],
+    [ 8] [],
+    [ 9] [],
+    [10] [],
+    [11] [
+        [0] 262778398
+    ],
+    [12] [],
+    [13] [],
+    [14] [
+        [0] 387881985
+    ]
+]
+[
+    [ 0] [],
+    [ 1] [],
+    [ 2] [
+        [0] 98141300
+    ],
+    [ 3] [
+        [0] 377027262
+    ],
+    [ 4] [],
+    [ 5] [],
+    [ 6] [
+        [0] 282696764
+    ],
+    [ 7] [],
+    [ 8] [],
+    [ 9] [],
+    [10] [],
+    [11] [
+        [0] 262778398
+    ],
+    [12] [],
+    [13] [],
+    [14] [
+        [0] 387881985
+    ]
+]
+type message
+type callback
+CALLBACK DATA: vote_5_5
+[
+    [0] "[[], [], [98141300], [377027262], [], [], [282696764], [], [], [], [], [262778398], [], [352073877], [387881985]]",
+    [1] "МП5 №666,МП5 №154,МПК,АКМ,АКСУ 75384,АК-104,АКСУ SLT,Г36Ц,АС ВАЛ Силумин,АС ВАЛ Сталь,Г3,ХК-94,М4А1,Г36,АК-105"
+]
+[
+    [ 0] [],
+    [ 1] [],
+    [ 2] [
+        [0] 98141300
+    ],
+    [ 3] [
+        [0] 377027262
+    ],
+    [ 4] [],
+    [ 5] [],
+    [ 6] [
+        [0] 282696764
+    ],
+    [ 7] [],
+    [ 8] [],
+    [ 9] [],
+    [10] [],
+    [11] [
+        [0] 262778398
+    ],
+    [12] [],
+    [13] [
+        [0] 352073877
+    ],
+    [14] [
+        [0] 387881985
+    ]
+]
+[
+    [ 0] [],
+    [ 1] [],
+    [ 2] [
+        [0] 98141300
+    ],
+    [ 3] [
+        [0] 377027262
+    ],
+    [ 4] [],
+    [ 5] [],
+    [ 6] [
+        [0] 282696764
+    ],
+    [ 7] [],
+    [ 8] [],
+    [ 9] [],
+    [10] [],
+    [11] [
+        [0] 262778398
+    ],
+    [12] [],
+    [13] [
+        [0] 352073877
+    ],
+    [14] [
+        [0] 387881985
+    ]
+]
+type callback
+CALLBACK DATA: vote_5_5
+[
+    [0] "[[], [], [98141300], [377027262], [], [401503990], [282696764], [], [], [], [], [262778398], [], [352073877], [387881985]]",
+    [1] "МП5 №666,МП5 №154,МПК,АКМ,АКСУ 75384,АК-104,АКСУ SLT,Г36Ц,АС ВАЛ Силумин,АС ВАЛ Сталь,Г3,ХК-94,М4А1,Г36,АК-105"
+]
+[
+    [ 0] [],
+    [ 1] [],
+    [ 2] [
+        [0] 98141300
+    ],
+    [ 3] [
+        [0] 377027262
+    ],
+    [ 4] [],
+    [ 5] [
+        [0] 401503990
+    ],
+    [ 6] [
+        [0] 282696764
+    ],
+    [ 7] [],
+    [ 8] [],
+    [ 9] [],
+    [10] [],
+    [11] [
+        [0] 262778398
+    ],
+    [12] [],
+    [13] [
+        [0] 352073877
+    ],
+    [14] [
+        [0] 387881985
+    ]
+]
+[
+    [ 0] [],
+    [ 1] [],
+    [ 2] [
+        [0] 98141300
+    ],
+    [ 3] [
+        [0] 377027262
+    ],
+    [ 4] [],
+    [ 5] [
+        [0] 401503990
+    ],
+    [ 6] [
+        [0] 282696764
+    ],
+    [ 7] [],
+    [ 8] [],
+    [ 9] [],
+    [10] [],
+    [11] [
+        [0] 262778398
+    ],
+    [12] [],
+    [13] [
+        [0] 352073877
+    ],
+    [14] [
+        [0] 387881985
+    ]
+]
+type callback
+CALLBACK DATA: vote_5_5
+[
+    [0] "[[], [], [98141300], [377027262], [], [401503990], [282696764], [], [], [], [], [262778398], [], [352073877], [387881985]]",
+    [1] "МП5 №666,МП5 №154,МПК,АКМ,АКСУ 75384,АК-104,АКСУ SLT,Г36Ц,АС ВАЛ Силумин,АС ВАЛ Сталь,Г3,ХК-94,М4А1,Г36,АК-105"
+]
+[
+    [ 0] [],
+    [ 1] [],
+    [ 2] [
+        [0] 98141300
+    ],
+    [ 3] [
+        [0] 377027262
+    ],
+    [ 4] [],
+    [ 5] [
+        [0] 401503990
+    ],
+    [ 6] [
+        [0] 282696764
+    ],
+    [ 7] [],
+    [ 8] [],
+    [ 9] [],
+    [10] [],
+    [11] [
+        [0] 262778398
+    ],
+    [12] [],
+    [13] [
+        [0] 352073877
+    ],
+    [14] [
+        [0] 387881985
+    ]
+]
+[
+    [ 0] [],
+    [ 1] [],
+    [ 2] [
+        [0] 98141300
+    ],
+    [ 3] [
+        [0] 377027262
+    ],
+    [ 4] [],
+    [ 5] [
+        [0] 401503990
+    ],
+    [ 6] [
+        [0] 282696764
+    ],
+    [ 7] [],
+    [ 8] [],
+    [ 9] [],
+    [10] [],
+    [11] [
+        [0] 262778398
+    ],
+    [12] [],
+    [13] [
+        [0] 352073877
+    ],
+    [14] [
+        [0] 387881985
+    ]
+]
+type callback
+CALLBACK DATA: vote_5_5
+[
+    [0] "[[], [], [98141300], [377027262], [], [401503990], [282696764], [], [], [], [], [262778398], [], [352073877], [387881985]]",
+    [1] "МП5 №666,МП5 №154,МПК,АКМ,АКСУ 75384,АК-104,АКСУ SLT,Г36Ц,АС ВАЛ Силумин,АС ВАЛ Сталь,Г3,ХК-94,М4А1,Г36,АК-105"
+]
+[
+    [ 0] [],
+    [ 1] [],
+    [ 2] [
+        [0] 98141300
+    ],
+    [ 3] [
+        [0] 377027262
+    ],
+    [ 4] [],
+    [ 5] [
+        [0] 401503990
+    ],
+    [ 6] [
+        [0] 282696764
+    ],
+    [ 7] [],
+    [ 8] [],
+    [ 9] [],
+    [10] [],
+    [11] [
+        [0] 262778398
+    ],
+    [12] [],
+    [13] [
+        [0] 352073877
+    ],
+    [14] [
+        [0] 387881985
+    ]
+]
+[
+    [ 0] [],
+    [ 1] [],
+    [ 2] [
+        [0] 98141300
+    ],
+    [ 3] [
+        [0] 377027262
+    ],
+    [ 4] [],
+    [ 5] [
+        [0] 401503990
+    ],
+    [ 6] [
+        [0] 282696764
+    ],
+    [ 7] [],
+    [ 8] [],
+    [ 9] [],
+    [10] [],
+    [11] [
+        [0] 262778398
+    ],
+    [12] [],
+    [13] [
+        [0] 352073877
+    ],
+    [14] [
+        [0] 387881985
+    ]
+]
+type callback
+CALLBACK DATA: vote_5_5
+[
+    [0] "[[], [], [98141300], [377027262], [], [401503990], [282696764], [], [], [], [], [262778398], [], [352073877], [387881985]]",
+    [1] "МП5 №666,МП5 №154,МПК,АКМ,АКСУ 75384,АК-104,АКСУ SLT,Г36Ц,АС ВАЛ Силумин,АС ВАЛ Сталь,Г3,ХК-94,М4А1,Г36,АК-105"
+]
+[
+    [ 0] [],
+    [ 1] [],
+    [ 2] [
+        [0] 98141300
+    ],
+    [ 3] [
+        [0] 377027262
+    ],
+    [ 4] [],
+    [ 5] [
+        [0] 401503990
+    ],
+    [ 6] [
+        [0] 282696764
+    ],
+    [ 7] [],
+    [ 8] [],
+    [ 9] [],
+    [10] [],
+    [11] [
+        [0] 262778398
+    ],
+    [12] [],
+    [13] [
+        [0] 352073877
+    ],
+    [14] [
+        [0] 387881985
+    ]
+]
+[
+    [ 0] [],
+    [ 1] [],
+    [ 2] [
+        [0] 98141300
+    ],
+    [ 3] [
+        [0] 377027262
+    ],
+    [ 4] [],
+    [ 5] [
+        [0] 401503990
+    ],
+    [ 6] [
+        [0] 282696764
+    ],
+    [ 7] [],
+    [ 8] [],
+    [ 9] [],
+    [10] [],
+    [11] [
+        [0] 262778398
+    ],
+    [12] [],
+    [13] [
+        [0] 352073877
+    ],
+    [14] [
+        [0] 387881985
+    ]
+]
+type callback
+CALLBACK DATA: vote_5_5
+[
+    [0] "[[], [], [98141300], [377027262], [], [401503990], [282696764], [], [], [], [], [262778398], [], [352073877], [387881985]]",
+    [1] "МП5 №666,МП5 №154,МПК,АКМ,АКСУ 75384,АК-104,АКСУ SLT,Г36Ц,АС ВАЛ Силумин,АС ВАЛ Сталь,Г3,ХК-94,М4А1,Г36,АК-105"
+]
+[
+    [ 0] [],
+    [ 1] [],
+    [ 2] [
+        [0] 98141300
+    ],
+    [ 3] [
+        [0] 377027262
+    ],
+    [ 4] [],
+    [ 5] [
+        [0] 401503990
+    ],
+    [ 6] [
+        [0] 282696764
+    ],
+    [ 7] [],
+    [ 8] [],
+    [ 9] [],
+    [10] [],
+    [11] [
+        [0] 262778398
+    ],
+    [12] [],
+    [13] [
+        [0] 352073877
+    ],
+    [14] [
+        [0] 387881985
+    ]
+]
+[
+    [ 0] [],
+    [ 1] [],
+    [ 2] [
+        [0] 98141300
+    ],
+    [ 3] [
+        [0] 377027262
+    ],
+    [ 4] [],
+    [ 5] [
+        [0] 401503990
+    ],
+    [ 6] [
+        [0] 282696764
+    ],
+    [ 7] [],
+    [ 8] [],
+    [ 9] [],
+    [10] [],
+    [11] [
+        [0] 262778398
+    ],
+    [12] [],
+    [13] [
+        [0] 352073877
+    ],
+    [14] [
+        [0] 387881985
+    ]
+]
+type callback
+CALLBACK DATA: back
+type callback
+CALLBACK DATA: profilesList
+type message
+type callback
+CALLBACK DATA: profilesList
+type callback
+CALLBACK DATA: back
 type message
 type message
 type message
@@ -134,500 +733,4213 @@ type message
 type message
 type message
 type message
+nil
+type callback
+CALLBACK DATA: back
+type callback
+CALLBACK DATA: profilesList
+type callback
+CALLBACK DATA: back
+type callback
+CALLBACK DATA: profilesList
+type callback
+CALLBACK DATA: profileInfo_13
+type callback
+CALLBACK DATA: back
+type callback
+CALLBACK DATA: addDonate
+type callback
+CALLBACK DATA: addUserDonate_12
+type message
+type message
+type callback
+CALLBACK DATA: announcement
+type message
+type callback
+CALLBACK DATA: profilesList
+type callback
+CALLBACK DATA: back
+type callback
+CALLBACK DATA: profilesList
+type callback
+CALLBACK DATA: back
+type callback
+CALLBACK DATA: profilesList
+type callback
+CALLBACK DATA: back
+type callback
+CALLBACK DATA: profilesList
+type callback
+CALLBACK DATA: back
+type message
+type callback
+CALLBACK DATA: profilesList
+type callback
+CALLBACK DATA: profileInfo_13
+type callback
+CALLBACK DATA: back
+type callback
+CALLBACK DATA: profilesList
+type callback
+CALLBACK DATA: back
+type callback
+CALLBACK DATA: profilesList
+type callback
+CALLBACK DATA: back
+type callback
+CALLBACK DATA: profilesList
+type callback
+CALLBACK DATA: back
+type callback
+CALLBACK DATA: profilesList
+type callback
+CALLBACK DATA: back
+type callback
+CALLBACK DATA: profilesList
+type callback
+CALLBACK DATA: back
+type callback
+CALLBACK DATA: announcement
+type message
+type callback
+CALLBACK DATA: addDonate
+type callback
+CALLBACK DATA: addUserDonate_14
 type message
 type message
 type message
 type callback
+CALLBACK DATA: profilesList
 type callback
-type message
-type message
+CALLBACK DATA: back
 type callback
+CALLBACK DATA: profilesList
 type callback
+CALLBACK DATA: back
 type callback
-RIFLE_ID: String
+CALLBACK DATA: profilesList
 type callback
+CALLBACK DATA: vote_5_2
+[
+    [0] "[[], [], [98141300], [377027262], [], [401503990], [282696764], [], [], [], [], [262778398], [], [352073877], [387881985]]",
+    [1] "МП5 №666,МП5 №154,МПК,АКМ,АКСУ 75384,АК-104,АКСУ SLT,Г36Ц,АС ВАЛ Силумин,АС ВАЛ Сталь,Г3,ХК-94,М4А1,Г36,АК-105"
+]
+[
+    [ 0] [],
+    [ 1] [],
+    [ 2] [
+        [0] 98141300
+    ],
+    [ 3] [
+        [0] 377027262
+    ],
+    [ 4] [],
+    [ 5] [
+        [0] 401503990
+    ],
+    [ 6] [
+        [0] 282696764
+    ],
+    [ 7] [],
+    [ 8] [],
+    [ 9] [],
+    [10] [],
+    [11] [
+        [0] 262778398
+    ],
+    [12] [],
+    [13] [
+        [0] 352073877
+    ],
+    [14] [
+        [0] 387881985
+    ]
+]
+[
+    [ 0] [],
+    [ 1] [],
+    [ 2] [
+        [0] 98141300
+    ],
+    [ 3] [
+        [0] 377027262
+    ],
+    [ 4] [],
+    [ 5] [
+        [0] 401503990
+    ],
+    [ 6] [
+        [0] 282696764
+    ],
+    [ 7] [],
+    [ 8] [],
+    [ 9] [],
+    [10] [],
+    [11] [
+        [0] 262778398
+    ],
+    [12] [],
+    [13] [
+        [0] 352073877
+    ],
+    [14] [
+        [0] 387881985
+    ]
+]
 type callback
+CALLBACK DATA: vote_5_3
+[
+    [0] "[[], [], [98141300], [377027262], [], [401503990], [282696764], [], [], [], [], [262778398], [], [352073877], [387881985]]",
+    [1] "МП5 №666,МП5 №154,МПК,АКМ,АКСУ 75384,АК-104,АКСУ SLT,Г36Ц,АС ВАЛ Силумин,АС ВАЛ Сталь,Г3,ХК-94,М4А1,Г36,АК-105"
+]
+[
+    [ 0] [],
+    [ 1] [],
+    [ 2] [
+        [0] 98141300
+    ],
+    [ 3] [
+        [0] 377027262
+    ],
+    [ 4] [],
+    [ 5] [
+        [0] 401503990
+    ],
+    [ 6] [
+        [0] 282696764
+    ],
+    [ 7] [],
+    [ 8] [],
+    [ 9] [],
+    [10] [],
+    [11] [
+        [0] 262778398
+    ],
+    [12] [],
+    [13] [
+        [0] 352073877
+    ],
+    [14] [
+        [0] 387881985
+    ]
+]
+[
+    [ 0] [],
+    [ 1] [],
+    [ 2] [
+        [0] 98141300
+    ],
+    [ 3] [
+        [0] 377027262
+    ],
+    [ 4] [],
+    [ 5] [
+        [0] 401503990
+    ],
+    [ 6] [
+        [0] 282696764
+    ],
+    [ 7] [],
+    [ 8] [],
+    [ 9] [],
+    [10] [],
+    [11] [
+        [0] 262778398
+    ],
+    [12] [],
+    [13] [
+        [0] 352073877
+    ],
+    [14] [
+        [0] 387881985
+    ]
+]
 type callback
-RIFLE_ID: String
-type callback
-type callback
-type callback
-type callback
-type message
-type message
-type message
-type callback
-type message
-type callback
-type callback
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type callback
-/home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:70:in `call': Telegram API has returned the error. (ok: "false", error_code: "404", description: "Not Found") (Telegram::Bot::Exceptions::ResponseError)
+CALLBACK DATA: vote_5_2
+[
+    [0] "[[], [], [], [377027262, 98141300], [], [401503990], [282696764], [], [], [], [], [262778398], [], [352073877], [387881985]]",
+    [1] "МП5 №666,МП5 №154,МПК,АКМ,АКСУ 75384,АК-104,АКСУ SLT,Г36Ц,АС ВАЛ Силумин,АС ВАЛ Сталь,Г3,ХК-94,М4А1,Г36,АК-105"
+]
+[
+    [ 0] [],
+    [ 1] [],
+    [ 2] [],
+    [ 3] [
+        [0] 377027262,
+        [1] 98141300
+    ],
+    [ 4] [],
+    [ 5] [
+        [0] 401503990
+    ],
+    [ 6] [
+        [0] 282696764
+    ],
+    [ 7] [],
+    [ 8] [],
+    [ 9] [],
+    [10] [],
+    [11] [
+        [0] 262778398
+    ],
+    [12] [],
+    [13] [
+        [0] 352073877
+    ],
+    [14] [
+        [0] 387881985
+    ]
+]/home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:70:in `call': Telegram API has returned the error. (error_code: "502", uri: "https://api.telegram.org/bot271527823:AAHchI90iJUG7qVpqY6-M1WvUc2jElyCDQo/getUpdates") (Telegram::Bot::Exceptions::ResponseError)
 	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:54:in `method_missing'
 	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:30:in `fetch_updates'
 	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:25:in `listen'
-	from main.rb:261:in `block in <main>'
+	from main.rb:351:in `block in <main>'
 	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:18:in `run'
 	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:8:in `run'
-	from main.rb:260:in `<main>'
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
+	from main.rb:350:in `<main>'
+
+[
+    [ 0] [],
+    [ 1] [],
+    [ 2] [],
+    [ 3] [
+        [0] 377027262,
+        [1] 98141300
+    ],
+    [ 4] [],
+    [ 5] [
+        [0] 401503990
+    ],
+    [ 6] [
+        [0] 282696764
+    ],
+    [ 7] [],
+    [ 8] [],
+    [ 9] [],
+    [10] [],
+    [11] [
+        [0] 262778398
+    ],
+    [12] [],
+    [13] [
+        [0] 352073877
+    ],
+    [14] [
+        [0] 387881985
+    ]
+]
 type callback
+CALLBACK DATA: profilesList
 type callback
-type callback
-type callback
-type message
-type message
-type callback
-type message
-type callback
-type callback
-type callback
-type callback
-type message
-type message
-type message
-type message
-type callback
-type message
-type message
-type callback
-type message
-type message
-type callback
-type callback
-type message
-type message
-type callback
-type callback
-type callback
-type callback
-type callback
-type callback
-type callback
-type callback
-type callback
-type callback
-type callback
-type callback
-type message
-type callback
-type callback
-type callback
-type callback
-type callback
-type callback
-type callback
-type message
-/home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:70:in `call': Telegram API has returned the error. (ok: "false", error_code: "403", description: "Forbidden: bot can't initiate conversation with a user") (Telegram::Bot::Exceptions::ResponseError)
+CALLBACK DATA: back
+/home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:70:in `call': Telegram API has returned the error. (error_code: "502", uri: "https://api.telegram.org/bot271527823:AAHchI90iJUG7qVpqY6-M1WvUc2jElyCDQo/getUpdates") (Telegram::Bot::Exceptions::ResponseError)
 	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:54:in `method_missing'
-	from main.rb:264:in `block (2 levels) in <main>'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:38:in `block in fetch_updates'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `each'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `fetch_updates'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:30:in `fetch_updates'
 	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:25:in `listen'
-	from main.rb:261:in `block in <main>'
+	from main.rb:351:in `block in <main>'
 	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:18:in `run'
 	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:8:in `run'
-	from main.rb:260:in `<main>'
+	from main.rb:350:in `<main>'
 type callback
+CALLBACK DATA: profilesList
+type callback
+CALLBACK DATA: back
+type callback
+CALLBACK DATA: profilesList
+type callback
+CALLBACK DATA: back
+type callback
+CALLBACK DATA: profilesList
+type callback
+CALLBACK DATA: back
+type callback
+CALLBACK DATA: profilesList
+type callback
+CALLBACK DATA: back
+type message
+type message
+type message
+type message
+type message
 type message
 type callback
+CALLBACK DATA: profilesList
+type callback
+CALLBACK DATA: back
 type message
 type callback
+CALLBACK DATA: profilesList
 type callback
-type message
-type message
-type message
+CALLBACK DATA: back
 type callback
-type callback
-type callback
-type callback
-type message
-type message
-type message
-type message
+CALLBACK DATA: announcement
 type message
 type callback
+CALLBACK DATA: profilesList
+type callback
+CALLBACK DATA: back
+type callback
+CALLBACK DATA: profilesList
+type callback
+CALLBACK DATA: back
+type callback
+CALLBACK DATA: profilesList
+type callback
+CALLBACK DATA: back
+type callback
+CALLBACK DATA: profilesList
+type callback
+CALLBACK DATA: back
+type callback
+CALLBACK DATA: profilesList
+type callback
+CALLBACK DATA: back
+type callback
+CALLBACK DATA: profilesList
+type callback
+CALLBACK DATA: back
+type callback
+CALLBACK DATA: profilesList
+type callback
+CALLBACK DATA: back
+type callback
+CALLBACK DATA: profilesList
+type callback
+CALLBACK DATA: back
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
 type message
 type message
 type callback
+CALLBACK DATA: profilesList
 type callback
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-type message
-/home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:70:in `call': Telegram API has returned the error. (ok: "false", error_code: "403", description: "Forbidden: bot can't initiate conversation with a user") (Telegram::Bot::Exceptions::ResponseError)
+CALLBACK DATA: back
+type callback
+CALLBACK DATA: profilesList
+type callback
+CALLBACK DATA: profileInfo_5
+type callback
+CALLBACK DATA: riflesList
+type callback
+CALLBACK DATA: back
+type message
+type message
+type message
+nil
+type callback
+CALLBACK DATA: profilesList
+type callback
+CALLBACK DATA: back
+type callback
+CALLBACK DATA: addDonate
+type callback
+CALLBACK DATA: addUserDonate_15
+type message
+type callback
+CALLBACK DATA: back
+type callback
+CALLBACK DATA: addDonate
+type callback
+CALLBACK DATA: back
+type callback
+CALLBACK DATA: addDonate
+type callback
+CALLBACK DATA: addUserDonate_15
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+nil
+type message
+type message
+type message
+type message
+type message
+type message
+type callback
+CALLBACK DATA: vote_5_3
+[
+    [0] "[[], [], [98141300], [377027262], [], [401503990], [282696764], [], [], [], [], [262778398], [], [352073877], [387881985]]",
+    [1] "МП5 №666,МП5 №154,МПК,АКМ,АКСУ 75384,АК-104,АКСУ SLT,Г36Ц,АС ВАЛ Силумин,АС ВАЛ Сталь,Г3,ХК-94,М4А1,Г36,АК-105"
+]
+[
+    [ 0] [],
+    [ 1] [],
+    [ 2] [
+        [0] 98141300
+    ],
+    [ 3] [
+        [0] 377027262
+    ],
+    [ 4] [],
+    [ 5] [
+        [0] 401503990
+    ],
+    [ 6] [
+        [0] 282696764
+    ],
+    [ 7] [],
+    [ 8] [],
+    [ 9] [],
+    [10] [],
+    [11] [
+        [0] 262778398
+    ],
+    [12] [],
+    [13] [
+        [0] 352073877
+    ],
+    [14] [
+        [0] 387881985
+    ]
+]
+[
+    [ 0] [],
+    [ 1] [],
+    [ 2] [
+        [0] 98141300
+    ],
+    [ 3] [
+        [0] 377027262
+    ],
+    [ 4] [],
+    [ 5] [
+        [0] 401503990
+    ],
+    [ 6] [
+        [0] 282696764
+    ],
+    [ 7] [],
+    [ 8] [],
+    [ 9] [],
+    [10] [],
+    [11] [
+        [0] 262778398
+    ],
+    [12] [],
+    [13] [
+        [0] 352073877
+    ],
+    [14] [
+        [0] 387881985
+    ]
+]
+type message
+type message
+type message
+type message
+type message
+type callback
+CALLBACK DATA: profilesList
+type callback
+CALLBACK DATA: back
+type callback
+CALLBACK DATA: addDonate
+type callback
+CALLBACK DATA: addUserDonate_16
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type callback
+CALLBACK DATA: vote_5_4
+[
+    [0] "[[], [], [98141300], [377027262, 374169485], [], [401503990], [282696764], [], [], [], [], [262778398], [], [352073877], [387881985]]",
+    [1] "МП5 №666,МП5 №154,МПК,АКМ,АКСУ 75384,АК-104,АКСУ SLT,Г36Ц,АС ВАЛ Силумин,АС ВАЛ Сталь,Г3,ХК-94,М4А1,Г36,АК-105"
+]
+[
+    [ 0] [],
+    [ 1] [],
+    [ 2] [
+        [0] 98141300
+    ],
+    [ 3] [
+        [0] 377027262,
+        [1] 374169485
+    ],
+    [ 4] [],
+    [ 5] [
+        [0] 401503990
+    ],
+    [ 6] [
+        [0] 282696764
+    ],
+    [ 7] [],
+    [ 8] [],
+    [ 9] [],
+    [10] [],
+    [11] [
+        [0] 262778398
+    ],
+    [12] [],
+    [13] [
+        [0] 352073877
+    ],
+    [14] [
+        [0] 387881985
+    ]
+]
+[
+    [ 0] [],
+    [ 1] [],
+    [ 2] [
+        [0] 98141300
+    ],
+    [ 3] [
+        [0] 377027262,
+        [1] 374169485
+    ],
+    [ 4] [],
+    [ 5] [
+        [0] 401503990
+    ],
+    [ 6] [
+        [0] 282696764
+    ],
+    [ 7] [],
+    [ 8] [],
+    [ 9] [],
+    [10] [],
+    [11] [
+        [0] 262778398
+    ],
+    [12] [],
+    [13] [
+        [0] 352073877
+    ],
+    [14] [
+        [0] 387881985
+    ]
+]
+/home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:70:in `call': Telegram API has returned the error. (error_code: "502", uri: "https://api.telegram.org/bot271527823:AAHchI90iJUG7qVpqY6-M1WvUc2jElyCDQo/getUpdates") (Telegram::Bot::Exceptions::ResponseError)
 	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:54:in `method_missing'
-	from main.rb:264:in `block (2 levels) in <main>'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:38:in `block in fetch_updates'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `each'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `fetch_updates'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:30:in `fetch_updates'
 	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:25:in `listen'
-	from main.rb:261:in `block in <main>'
+	from main.rb:351:in `block in <main>'
 	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:18:in `run'
 	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:8:in `run'
-	from main.rb:260:in `<main>'
-type callback
-type callback
-type callback
-type callback
-type callback
+	from main.rb:350:in `<main>'
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
 type message
 type message
 type callback
+CALLBACK DATA: addDonate
 type callback
+CALLBACK DATA: addUserDonate_13
+type message
 type callback
+CALLBACK DATA: addDonate
 type callback
+CALLBACK DATA: addUserDonate_7
+type message
 type callback
+CALLBACK DATA: addExpense
+type message
 type callback
+CALLBACK DATA: addExpense
+type message
 type callback
+CALLBACK DATA: addExpense
+type message
+type message
 type callback
+CALLBACK DATA: riflesList
 type callback
+CALLBACK DATA: rifleInfo_14
 type callback
+CALLBACK DATA: rifleFullInfo_14
 type callback
-/home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:70:in `call': Telegram API has returned the error. (ok: "false", error_code: "400", description: "Bad Request: group chat was migrated to a supergroup chat", parameters: "{"migrate_to_chat_id"=>-1001133247548}") (Telegram::Bot::Exceptions::ResponseError)
+CALLBACK DATA: riflesList
+type callback
+CALLBACK DATA: rifleInfo_8
+type callback
+CALLBACK DATA: rifleFullInfo_8
+type callback
+CALLBACK DATA: setRifleComment_8
+type message
+type callback
+CALLBACK DATA: rifleFullInfo_8
+type message
+type callback
+CALLBACK DATA: makeVote
+type message
+BUTTON CREATE
+type callback
+CALLBACK DATA: vote_6_1
+[
+    [0] "[[],[],[],[]]",
+    [1] "Да,С пристрастием,Несомненно,Я отпизжу!"
+]
+[
+    [0] [],
+    [1] [],
+    [2] [],
+    [3] []
+]
+[
+    [0] [],
+    [1] [],
+    [2] [],
+    [3] []
+]
+type callback
+CALLBACK DATA: vote_6_2
+[
+    [0] "[[], [306246267], [], []]",
+    [1] "Да,С пристрастием,Несомненно,Я отпизжу!"
+]
+[
+    [0] [],
+    [1] [
+        [0] 306246267
+    ],
+    [2] [],
+    [3] []
+]
+[
+    [0] [],
+    [1] [
+        [0] 306246267
+    ],
+    [2] [],
+    [3] []
+]
+type callback
+CALLBACK DATA: vote_6_2
+[
+    [0] "[[], [306246267], [98141300], []]",
+    [1] "Да,С пристрастием,Несомненно,Я отпизжу!"
+]
+[
+    [0] [],
+    [1] [
+        [0] 306246267
+    ],
+    [2] [
+        [0] 98141300
+    ],
+    [3] []
+]
+[
+    [0] [],
+    [1] [
+        [0] 306246267
+    ],
+    [2] [
+        [0] 98141300
+    ],
+    [3] []
+]
+type callback
+CALLBACK DATA: vote_6_1
+[
+    [0] "[[], [306246267], [98141300, 93091905], []]",
+    [1] "Да,С пристрастием,Несомненно,Я отпизжу!"
+]
+[
+    [0] [],
+    [1] [
+        [0] 306246267
+    ],
+    [2] [
+        [0] 98141300,
+        [1] 93091905
+    ],
+    [3] []
+]
+[
+    [0] [],
+    [1] [
+        [0] 306246267
+    ],
+    [2] [
+        [0] 98141300,
+        [1] 93091905
+    ],
+    [3] []
+]
+type callback
+CALLBACK DATA: vote_6_1
+[
+    [0] "[[], [306246267, 388200653], [98141300, 93091905], []]",
+    [1] "Да,С пристрастием,Несомненно,Я отпизжу!"
+]
+[
+    [0] [],
+    [1] [
+        [0] 306246267,
+        [1] 388200653
+    ],
+    [2] [
+        [0] 98141300,
+        [1] 93091905
+    ],
+    [3] []
+]
+[
+    [0] [],
+    [1] [
+        [0] 306246267,
+        [1] 388200653
+    ],
+    [2] [
+        [0] 98141300,
+        [1] 93091905
+    ],
+    [3] []
+]
+type callback
+CALLBACK DATA: vote_6_3
+[
+    [0] "[[], [306246267, 388200653, 387881985], [98141300, 93091905], []]",
+    [1] "Да,С пристрастием,Несомненно,Я отпизжу!"
+]
+[
+    [0] [],
+    [1] [
+        [0] 306246267,
+        [1] 388200653,
+        [2] 387881985
+    ],
+    [2] [
+        [0] 98141300,
+        [1] 93091905
+    ],
+    [3] []
+]
+[
+    [0] [],
+    [1] [
+        [0] 306246267,
+        [1] 388200653,
+        [2] 387881985
+    ],
+    [2] [
+        [0] 98141300,
+        [1] 93091905
+    ],
+    [3] []
+]
+type callback
+CALLBACK DATA: vote_6_3
+[
+    [0] "[[], [306246267, 388200653, 387881985], [98141300, 93091905], [401503990]]",
+    [1] "Да,С пристрастием,Несомненно,Я отпизжу!"
+]
+[
+    [0] [],
+    [1] [
+        [0] 306246267,
+        [1] 388200653,
+        [2] 387881985
+    ],
+    [2] [
+        [0] 98141300,
+        [1] 93091905
+    ],
+    [3] [
+        [0] 401503990
+    ]
+]
+[
+    [0] [],
+    [1] [
+        [0] 306246267,
+        [1] 388200653,
+        [2] 387881985
+    ],
+    [2] [
+        [0] 98141300,
+        [1] 93091905
+    ],
+    [3] [
+        [0] 401503990
+    ]
+]
+/home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:70:in `call': Telegram API has returned the error. (error_code: "502", uri: "https://api.telegram.org/bot271527823:AAHchI90iJUG7qVpqY6-M1WvUc2jElyCDQo/getUpdates") (Telegram::Bot::Exceptions::ResponseError)
 	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:54:in `method_missing'
-	from main.rb:417:in `block (2 levels) in <main>'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:38:in `block in fetch_updates'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `each'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `fetch_updates'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:30:in `fetch_updates'
 	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:25:in `listen'
-	from main.rb:261:in `block in <main>'
+	from main.rb:351:in `block in <main>'
 	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:18:in `run'
 	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:8:in `run'
-	from main.rb:260:in `<main>'
+	from main.rb:350:in `<main>'
+type message
 type callback
+CALLBACK DATA: addExpense
+type message
 type callback
+CALLBACK DATA: addDonate
 type callback
+CALLBACK DATA: addUserDonate_9
+type message
+type message
+type message
 type callback
+CALLBACK DATA: vote_6_2
+[
+    [0] "[[], [306246267, 388200653, 387881985], [98141300, 93091905], [401503990, 282696764]]",
+    [1] "Да,С пристрастием,Несомненно,Я отпизжу!"
+]
+[
+    [0] [],
+    [1] [
+        [0] 306246267,
+        [1] 388200653,
+        [2] 387881985
+    ],
+    [2] [
+        [0] 98141300,
+        [1] 93091905
+    ],
+    [3] [
+        [0] 401503990,
+        [1] 282696764
+    ]
+]
+[
+    [0] [],
+    [1] [
+        [0] 306246267,
+        [1] 388200653,
+        [2] 387881985
+    ],
+    [2] [
+        [0] 98141300,
+        [1] 93091905
+    ],
+    [3] [
+        [0] 401503990,
+        [1] 282696764
+    ]
+]
 type callback
+CALLBACK DATA: vote_6_1
+[
+    [0] "[[], [306246267, 388200653, 387881985], [98141300, 93091905, 262778398], [401503990, 282696764]]",
+    [1] "Да,С пристрастием,Несомненно,Я отпизжу!"
+]
+[
+    [0] [],
+    [1] [
+        [0] 306246267,
+        [1] 388200653,
+        [2] 387881985
+    ],
+    [2] [
+        [0] 98141300,
+        [1] 93091905,
+        [2] 262778398
+    ],
+    [3] [
+        [0] 401503990,
+        [1] 282696764
+    ]
+]
+[
+    [0] [],
+    [1] [
+        [0] 306246267,
+        [1] 388200653,
+        [2] 387881985
+    ],
+    [2] [
+        [0] 98141300,
+        [1] 93091905,
+        [2] 262778398
+    ],
+    [3] [
+        [0] 401503990,
+        [1] 282696764
+    ]
+]
 type callback
+CALLBACK DATA: vote_6_2
+[
+    [0] "[[], [306246267, 388200653, 387881985, 262778398], [98141300, 93091905], [401503990, 282696764]]",
+    [1] "Да,С пристрастием,Несомненно,Я отпизжу!"
+]
+[
+    [0] [],
+    [1] [
+        [0] 306246267,
+        [1] 388200653,
+        [2] 387881985,
+        [3] 262778398
+    ],
+    [2] [
+        [0] 98141300,
+        [1] 93091905
+    ],
+    [3] [
+        [0] 401503990,
+        [1] 282696764
+    ]
+]
+[
+    [0] [],
+    [1] [
+        [0] 306246267,
+        [1] 388200653,
+        [2] 387881985,
+        [3] 262778398
+    ],
+    [2] [
+        [0] 98141300,
+        [1] 93091905
+    ],
+    [3] [
+        [0] 401503990,
+        [1] 282696764
+    ]
+]
 type callback
+CALLBACK DATA: vote_6_0
+[
+    [0] "[[], [306246267, 388200653, 387881985], [98141300, 93091905, 262778398], [401503990, 282696764]]",
+    [1] "Да,С пристрастием,Несомненно,Я отпизжу!"
+]
+[
+    [0] [],
+    [1] [
+        [0] 306246267,
+        [1] 388200653,
+        [2] 387881985
+    ],
+    [2] [
+        [0] 98141300,
+        [1] 93091905,
+        [2] 262778398
+    ],
+    [3] [
+        [0] 401503990,
+        [1] 282696764
+    ]
+]
+[
+    [0] [],
+    [1] [
+        [0] 306246267,
+        [1] 388200653,
+        [2] 387881985
+    ],
+    [2] [
+        [0] 98141300,
+        [1] 93091905,
+        [2] 262778398
+    ],
+    [3] [
+        [0] 401503990,
+        [1] 282696764
+    ]
+]
 type callback
+CALLBACK DATA: vote_6_0
+[
+    [0] "[[377027262], [306246267, 388200653, 387881985], [98141300, 93091905, 262778398], [401503990, 282696764]]",
+    [1] "Да,С пристрастием,Несомненно,Я отпизжу!"
+]
+[
+    [0] [
+        [0] 377027262
+    ],
+    [1] [
+        [0] 306246267,
+        [1] 388200653,
+        [2] 387881985
+    ],
+    [2] [
+        [0] 98141300,
+        [1] 93091905,
+        [2] 262778398
+    ],
+    [3] [
+        [0] 401503990,
+        [1] 282696764
+    ]
+]
+[
+    [0] [
+        [0] 377027262
+    ],
+    [1] [
+        [0] 306246267,
+        [1] 388200653,
+        [2] 387881985
+    ],
+    [2] [
+        [0] 98141300,
+        [1] 93091905,
+        [2] 262778398
+    ],
+    [3] [
+        [0] 401503990,
+        [1] 282696764
+    ]
+]
 type callback
+CALLBACK DATA: vote_6_1
+[
+    [0] "[[377027262], [306246267, 388200653, 387881985], [98141300, 93091905, 262778398], [401503990, 282696764]]",
+    [1] "Да,С пристрастием,Несомненно,Я отпизжу!"
+]
+[
+    [0] [
+        [0] 377027262
+    ],
+    [1] [
+        [0] 306246267,
+        [1] 388200653,
+        [2] 387881985
+    ],
+    [2] [
+        [0] 98141300,
+        [1] 93091905,
+        [2] 262778398
+    ],
+    [3] [
+        [0] 401503990,
+        [1] 282696764
+    ]
+]
+[
+    [0] [
+        [0] 377027262
+    ],
+    [1] [
+        [0] 306246267,
+        [1] 388200653,
+        [2] 387881985
+    ],
+    [2] [
+        [0] 98141300,
+        [1] 93091905,
+        [2] 262778398
+    ],
+    [3] [
+        [0] 401503990,
+        [1] 282696764
+    ]
+]
 type callback
+CALLBACK DATA: vote_6_2
+[
+    [0] "[[], [306246267, 388200653, 387881985, 377027262], [98141300, 93091905, 262778398], [401503990, 282696764]]",
+    [1] "Да,С пристрастием,Несомненно,Я отпизжу!"
+]
+[
+    [0] [],
+    [1] [
+        [0] 306246267,
+        [1] 388200653,
+        [2] 387881985,
+        [3] 377027262
+    ],
+    [2] [
+        [0] 98141300,
+        [1] 93091905,
+        [2] 262778398
+    ],
+    [3] [
+        [0] 401503990,
+        [1] 282696764
+    ]
+]
+[
+    [0] [],
+    [1] [
+        [0] 306246267,
+        [1] 388200653,
+        [2] 387881985,
+        [3] 377027262
+    ],
+    [2] [
+        [0] 98141300,
+        [1] 93091905,
+        [2] 262778398
+    ],
+    [3] [
+        [0] 401503990,
+        [1] 282696764
+    ]
+]
+type message
+type message
+type message
+type message
+type message
 type callback
+CALLBACK DATA: makeVote
+type message
+BUTTON CREATE
 type callback
+CALLBACK DATA: vote_7_0
+[
+    [0] "[[],[]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [],
+    [1] []
+]
+[
+    [0] [],
+    [1] []
+]
+type callback
+CALLBACK DATA: vote_7_0
+[
+    [0] "[[306246267], []]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 306246267
+    ],
+    [1] []
+]
+[
+    [0] [
+        [0] 306246267
+    ],
+    [1] []
+]
+type callback
+CALLBACK DATA: vote_7_0
+[
+    [0] "[[306246267, 352073877], []]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877
+    ],
+    [1] []
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877
+    ],
+    [1] []
+]
+type callback
+CALLBACK DATA: vote_7_0
+[
+    [0] "[[306246267, 352073877, 401503990], []]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 401503990
+    ],
+    [1] []
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 401503990
+    ],
+    [1] []
+]
+type callback
+CALLBACK DATA: vote_7_1
+[
+    [0] "[[306246267, 352073877, 401503990, 387881985], []]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 401503990,
+        [3] 387881985
+    ],
+    [1] []
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 401503990,
+        [3] 387881985
+    ],
+    [1] []
+]
+type message
+BUTTON CREATE
+type callback
+CALLBACK DATA: vote_8_0
+[
+    [0] "[[],[]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [],
+    [1] []
+]
+[
+    [0] [],
+    [1] []
+]
+type callback
+CALLBACK DATA: vote_8_0
+[
+    [0] "[[352073877], []]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 352073877
+    ],
+    [1] []
+]
+[
+    [0] [
+        [0] 352073877
+    ],
+    [1] []
+]
+type callback
+CALLBACK DATA: vote_8_1
+[
+    [0] "[[352073877, 387881985], []]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 387881985
+    ],
+    [1] []
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 387881985
+    ],
+    [1] []
+]
+type callback
+CALLBACK DATA: vote_8_0
+[
+    [0] "[[352073877, 387881985], [93091905]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 387881985
+    ],
+    [1] [
+        [0] 93091905
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 387881985
+    ],
+    [1] [
+        [0] 93091905
+    ]
+]
+type callback
+CALLBACK DATA: vote_8_0
+[
+    [0] "[[352073877, 387881985, 401503990], [93091905]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 387881985,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 93091905
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 387881985,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 93091905
+    ]
+]
+type callback
+CALLBACK DATA: vote_8_0
+[
+    [0] "[[352073877, 387881985, 401503990], [93091905]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 387881985,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 93091905
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 387881985,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 93091905
+    ]
+]
+type callback
+CALLBACK DATA: vote_8_0
+[
+    [0] "[[352073877, 387881985, 401503990], [93091905]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 387881985,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 93091905
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 387881985,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 93091905
+    ]
+]
+type callback
+CALLBACK DATA: vote_8_0
+[
+    [0] "[[352073877, 387881985, 401503990], [93091905]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 387881985,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 93091905
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 387881985,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 93091905
+    ]
+]
+type callback
+CALLBACK DATA: vote_8_0
+[
+    [0] "[[352073877, 387881985, 401503990], [93091905]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 387881985,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 93091905
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 387881985,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 93091905
+    ]
+]
+type callback
+CALLBACK DATA: vote_8_0
+[
+    [0] "[[352073877, 387881985, 401503990], [93091905]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 387881985,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 93091905
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 387881985,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 93091905
+    ]
+]
+type callback
+CALLBACK DATA: vote_8_0
+[
+    [0] "[[352073877, 387881985, 401503990], [93091905]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 387881985,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 93091905
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 387881985,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 93091905
+    ]
+]
+type message
+type callback
+CALLBACK DATA: vote_7_0
+[
+    [0] "[[306246267, 352073877, 401503990, 387881985], [93091905]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 401503990,
+        [3] 387881985
+    ],
+    [1] [
+        [0] 93091905
+    ]
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 401503990,
+        [3] 387881985
+    ],
+    [1] [
+        [0] 93091905
+    ]
+]
+type message
+BUTTON CREATE
+type callback
+CALLBACK DATA: vote_9_0
+[
+    [0] "[[],[]]",
+    [1] "Есть, нет"
+]
+[
+    [0] [],
+    [1] []
+]
+[
+    [0] [],
+    [1] []
+]
+type callback
+CALLBACK DATA: vote_9_0
+[
+    [0] "[[352073877], []]",
+    [1] "Есть, нет"
+]
+[
+    [0] [
+        [0] 352073877
+    ],
+    [1] []
+]
+[
+    [0] [
+        [0] 352073877
+    ],
+    [1] []
+]
+type callback
+CALLBACK DATA: vote_9_1
+[
+    [0] "[[352073877, 401503990], []]",
+    [1] "Есть, нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 401503990
+    ],
+    [1] []
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 401503990
+    ],
+    [1] []
+]
+type callback
+CALLBACK DATA: vote_8_1
+[
+    [0] "[[352073877, 387881985, 401503990], [93091905]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 387881985,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 93091905
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 387881985,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 93091905
+    ]
+]
+type callback
+CALLBACK DATA: vote_7_0
+[
+    [0] "[[306246267, 352073877, 401503990, 387881985], [93091905]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 401503990,
+        [3] 387881985
+    ],
+    [1] [
+        [0] 93091905
+    ]
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 401503990,
+        [3] 387881985
+    ],
+    [1] [
+        [0] 93091905
+    ]
+]
+type callback
+CALLBACK DATA: vote_7_1
+[
+    [0] "[[306246267, 352073877, 401503990, 387881985, 98141300], [93091905]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 401503990,
+        [3] 387881985,
+        [4] 98141300
+    ],
+    [1] [
+        [0] 93091905
+    ]
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 401503990,
+        [3] 387881985,
+        [4] 98141300
+    ],
+    [1] [
+        [0] 93091905
+    ]
+]
+type callback
+CALLBACK DATA: vote_8_1
+[
+    [0] "[[352073877, 387881985, 401503990], [93091905, 98141300]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 387881985,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 98141300
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 387881985,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 98141300
+    ]
+]
+type callback
+CALLBACK DATA: vote_9_0
+[
+    [0] "[[352073877, 401503990], [98141300]]",
+    [1] "Есть, нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 401503990
+    ],
+    [1] [
+        [0] 98141300
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 401503990
+    ],
+    [1] [
+        [0] 98141300
+    ]
+]
+type callback
+CALLBACK DATA: vote_9_1
+[
+    [0] "[[352073877, 401503990, 388200653], [98141300]]",
+    [1] "Есть, нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 401503990,
+        [2] 388200653
+    ],
+    [1] [
+        [0] 98141300
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 401503990,
+        [2] 388200653
+    ],
+    [1] [
+        [0] 98141300
+    ]
+]
+type callback
+CALLBACK DATA: vote_9_0
+[
+    [0] "[[352073877, 388200653], [98141300, 401503990]]",
+    [1] "Есть, нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653
+    ],
+    [1] [
+        [0] 98141300,
+        [1] 401503990
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653
+    ],
+    [1] [
+        [0] 98141300,
+        [1] 401503990
+    ]
+]
+type callback
+CALLBACK DATA: vote_9_1
+[
+    [0] "[[352073877, 388200653, 401503990], [98141300]]",
+    [1] "Есть, нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 98141300
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 98141300
+    ]
+]
+type callback
+CALLBACK DATA: vote_9_0
+[
+    [0] "[[352073877, 388200653], [98141300, 401503990]]",
+    [1] "Есть, нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653
+    ],
+    [1] [
+        [0] 98141300,
+        [1] 401503990
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653
+    ],
+    [1] [
+        [0] 98141300,
+        [1] 401503990
+    ]
+]
+type callback
+CALLBACK DATA: vote_9_1
+[
+    [0] "[[352073877, 388200653, 401503990], [98141300]]",
+    [1] "Есть, нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 98141300
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 98141300
+    ]
+]
+type callback
+CALLBACK DATA: vote_9_0
+[
+    [0] "[[352073877, 388200653], [98141300, 401503990]]",
+    [1] "Есть, нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653
+    ],
+    [1] [
+        [0] 98141300,
+        [1] 401503990
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653
+    ],
+    [1] [
+        [0] 98141300,
+        [1] 401503990
+    ]
+]
+type callback
+CALLBACK DATA: vote_9_1
+[
+    [0] "[[352073877, 388200653, 401503990], [98141300]]",
+    [1] "Есть, нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 98141300
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 98141300
+    ]
+]
+type callback
+CALLBACK DATA: vote_9_0
+[
+    [0] "[[352073877, 388200653], [98141300, 401503990]]",
+    [1] "Есть, нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653
+    ],
+    [1] [
+        [0] 98141300,
+        [1] 401503990
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653
+    ],
+    [1] [
+        [0] 98141300,
+        [1] 401503990
+    ]
+]
+type callback
+CALLBACK DATA: vote_9_1
+[
+    [0] "[[352073877, 388200653, 401503990], [98141300]]",
+    [1] "Есть, нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 98141300
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 98141300
+    ]
+]
+type callback
+CALLBACK DATA: vote_9_0
+[
+    [0] "[[352073877, 388200653], [98141300, 401503990]]",
+    [1] "Есть, нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653
+    ],
+    [1] [
+        [0] 98141300,
+        [1] 401503990
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653
+    ],
+    [1] [
+        [0] 98141300,
+        [1] 401503990
+    ]
+]
+type callback
+CALLBACK DATA: vote_9_1
+[
+    [0] "[[352073877, 388200653, 401503990], [98141300]]",
+    [1] "Есть, нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 98141300
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 98141300
+    ]
+]
+type callback
+CALLBACK DATA: vote_9_0
+[
+    [0] "[[352073877, 388200653], [98141300, 401503990]]",
+    [1] "Есть, нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653
+    ],
+    [1] [
+        [0] 98141300,
+        [1] 401503990
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653
+    ],
+    [1] [
+        [0] 98141300,
+        [1] 401503990
+    ]
+]
+type callback
+CALLBACK DATA: vote_9_1
+[
+    [0] "[[352073877, 388200653, 401503990], [98141300]]",
+    [1] "Есть, нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 98141300
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 98141300
+    ]
+]
+type callback
+CALLBACK DATA: vote_9_0
+[
+    [0] "[[352073877, 388200653], [98141300, 401503990]]",
+    [1] "Есть, нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653
+    ],
+    [1] [
+        [0] 98141300,
+        [1] 401503990
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653
+    ],
+    [1] [
+        [0] 98141300,
+        [1] 401503990
+    ]
+]
+type callback
+CALLBACK DATA: vote_9_1
+[
+    [0] "[[352073877, 388200653, 401503990], [98141300]]",
+    [1] "Есть, нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 98141300
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 98141300
+    ]
+]
+type callback
+CALLBACK DATA: vote_9_1
+[
+    [0] "[[352073877, 388200653], [98141300, 401503990]]",
+    [1] "Есть, нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653
+    ],
+    [1] [
+        [0] 98141300,
+        [1] 401503990
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653
+    ],
+    [1] [
+        [0] 98141300,
+        [1] 401503990
+    ]
+]
+type callback
+CALLBACK DATA: vote_9_0
+[
+    [0] "[[352073877, 388200653], [98141300, 401503990]]",
+    [1] "Есть, нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653
+    ],
+    [1] [
+        [0] 98141300,
+        [1] 401503990
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653
+    ],
+    [1] [
+        [0] 98141300,
+        [1] 401503990
+    ]
+]
+type callback
+CALLBACK DATA: vote_9_1
+[
+    [0] "[[352073877, 388200653, 401503990], [98141300]]",
+    [1] "Есть, нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 98141300
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 98141300
+    ]
+]
+type callback
+CALLBACK DATA: vote_9_0
+[
+    [0] "[[352073877, 388200653], [98141300, 401503990]]",
+    [1] "Есть, нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653
+    ],
+    [1] [
+        [0] 98141300,
+        [1] 401503990
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653
+    ],
+    [1] [
+        [0] 98141300,
+        [1] 401503990
+    ]
+]
+type callback
+CALLBACK DATA: vote_9_1
+[
+    [0] "[[352073877, 388200653, 401503990], [98141300]]",
+    [1] "Есть, нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 98141300
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 98141300
+    ]
+]
+type callback
+CALLBACK DATA: vote_9_0
+[
+    [0] "[[352073877, 388200653], [98141300, 401503990]]",
+    [1] "Есть, нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653
+    ],
+    [1] [
+        [0] 98141300,
+        [1] 401503990
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653
+    ],
+    [1] [
+        [0] 98141300,
+        [1] 401503990
+    ]
+]
+type callback
+CALLBACK DATA: vote_9_1
+[
+    [0] "[[352073877, 388200653, 401503990], [98141300]]",
+    [1] "Есть, нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 98141300
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 98141300
+    ]
+]
+type callback
+CALLBACK DATA: vote_9_0
+[
+    [0] "[[352073877, 388200653, 401503990], [98141300, 93091905]]",
+    [1] "Есть, нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 98141300,
+        [1] 93091905
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 98141300,
+        [1] 93091905
+    ]
+]
+type callback
+CALLBACK DATA: vote_9_0
+[
+    [0] "[[352073877, 388200653, 401503990, 93091905], [98141300]]",
+    [1] "Есть, нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990,
+        [3] 93091905
+    ],
+    [1] [
+        [0] 98141300
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990,
+        [3] 93091905
+    ],
+    [1] [
+        [0] 98141300
+    ]
+]
+type callback
+CALLBACK DATA: vote_9_0
+[
+    [0] "[[352073877, 388200653, 401503990, 93091905], [98141300]]",
+    [1] "Есть, нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990,
+        [3] 93091905
+    ],
+    [1] [
+        [0] 98141300
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990,
+        [3] 93091905
+    ],
+    [1] [
+        [0] 98141300
+    ]
+]
+type callback
+CALLBACK DATA: vote_9_0
+[
+    [0] "[[352073877, 388200653, 401503990, 93091905], [98141300]]",
+    [1] "Есть, нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990,
+        [3] 93091905
+    ],
+    [1] [
+        [0] 98141300
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990,
+        [3] 93091905
+    ],
+    [1] [
+        [0] 98141300
+    ]
+]
+type callback
+CALLBACK DATA: vote_9_0
+[
+    [0] "[[352073877, 388200653, 401503990, 93091905], [98141300]]",
+    [1] "Есть, нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990,
+        [3] 93091905
+    ],
+    [1] [
+        [0] 98141300
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990,
+        [3] 93091905
+    ],
+    [1] [
+        [0] 98141300
+    ]
+]
+type message
+type callback
+CALLBACK DATA: vote_7_1
+[
+    [0] "[[306246267, 352073877, 401503990, 387881985, 98141300], [93091905, 388200653]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 401503990,
+        [3] 387881985,
+        [4] 98141300
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653
+    ]
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 401503990,
+        [3] 387881985,
+        [4] 98141300
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653
+    ]
+]
+type callback
+CALLBACK DATA: vote_8_1
+[
+    [0] "[[352073877, 387881985, 401503990], [93091905, 98141300, 388200653]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 387881985,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 98141300,
+        [2] 388200653
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 387881985,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 98141300,
+        [2] 388200653
+    ]
+]
+type callback
+CALLBACK DATA: vote_9_1
+[
+    [0] "[[352073877, 388200653, 401503990, 93091905, 387881985], [98141300]]",
+    [1] "Есть, нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990,
+        [3] 93091905,
+        [4] 387881985
+    ],
+    [1] [
+        [0] 98141300
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990,
+        [3] 93091905,
+        [4] 387881985
+    ],
+    [1] [
+        [0] 98141300
+    ]
+]
+type callback
+CALLBACK DATA: vote_7_0
+[
+    [0] "[[306246267, 352073877, 401503990, 387881985, 98141300], [93091905, 388200653, 369487170]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 401503990,
+        [3] 387881985,
+        [4] 98141300
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170
+    ]
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 401503990,
+        [3] 387881985,
+        [4] 98141300
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170
+    ]
+]
+type callback
+CALLBACK DATA: vote_8_0
+[
+    [0] "[[352073877, 387881985, 401503990], [93091905, 98141300, 388200653, 369487170]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 387881985,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 98141300,
+        [2] 388200653,
+        [3] 369487170
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 387881985,
+        [2] 401503990
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 98141300,
+        [2] 388200653,
+        [3] 369487170
+    ]
+]
+type callback
+CALLBACK DATA: vote_9_0
+[
+    [0] "[[352073877, 388200653, 401503990, 93091905, 387881985], [98141300, 369487170]]",
+    [1] "Есть, нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990,
+        [3] 93091905,
+        [4] 387881985
+    ],
+    [1] [
+        [0] 98141300,
+        [1] 369487170
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990,
+        [3] 93091905,
+        [4] 387881985
+    ],
+    [1] [
+        [0] 98141300,
+        [1] 369487170
+    ]
+]
+type callback
+CALLBACK DATA: vote_7_1
+[
+    [0] "[[306246267, 352073877, 401503990, 387881985, 98141300, 282696764], [93091905, 388200653, 369487170]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 401503990,
+        [3] 387881985,
+        [4] 98141300,
+        [5] 282696764
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170
+    ]
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 401503990,
+        [3] 387881985,
+        [4] 98141300,
+        [5] 282696764
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170
+    ]
+]
+type callback
+CALLBACK DATA: vote_8_1
+[
+    [0] "[[352073877, 387881985, 401503990, 282696764], [93091905, 98141300, 388200653, 369487170]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 387881985,
+        [2] 401503990,
+        [3] 282696764
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 98141300,
+        [2] 388200653,
+        [3] 369487170
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 387881985,
+        [2] 401503990,
+        [3] 282696764
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 98141300,
+        [2] 388200653,
+        [3] 369487170
+    ]
+]
+type callback
+CALLBACK DATA: vote_9_0
+[
+    [0] "[[352073877, 388200653, 401503990, 93091905, 387881985, 282696764], [98141300, 369487170]]",
+    [1] "Есть, нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990,
+        [3] 93091905,
+        [4] 387881985,
+        [5] 282696764
+    ],
+    [1] [
+        [0] 98141300,
+        [1] 369487170
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990,
+        [3] 93091905,
+        [4] 387881985,
+        [5] 282696764
+    ],
+    [1] [
+        [0] 98141300,
+        [1] 369487170
+    ]
+]
+type callback
+CALLBACK DATA: vote_7_0
+[
+    [0] "[[306246267, 352073877, 401503990, 387881985, 98141300, 282696764], [93091905, 388200653, 369487170, 377027262]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 401503990,
+        [3] 387881985,
+        [4] 98141300,
+        [5] 282696764
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262
+    ]
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 401503990,
+        [3] 387881985,
+        [4] 98141300,
+        [5] 282696764
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262
+    ]
+]
+type callback
+CALLBACK DATA: vote_7_0
+[
+    [0] "[[306246267, 352073877, 401503990, 387881985, 98141300, 282696764, 254991387], [93091905, 388200653, 369487170, 377027262]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 401503990,
+        [3] 387881985,
+        [4] 98141300,
+        [5] 282696764,
+        [6] 254991387
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262
+    ]
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 401503990,
+        [3] 387881985,
+        [4] 98141300,
+        [5] 282696764,
+        [6] 254991387
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262
+    ]
+]
+type callback
+CALLBACK DATA: vote_8_0
+[
+    [0] "[[352073877, 387881985, 401503990, 282696764], [93091905, 98141300, 388200653, 369487170, 254991387]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 387881985,
+        [2] 401503990,
+        [3] 282696764
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 98141300,
+        [2] 388200653,
+        [3] 369487170,
+        [4] 254991387
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 387881985,
+        [2] 401503990,
+        [3] 282696764
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 98141300,
+        [2] 388200653,
+        [3] 369487170,
+        [4] 254991387
+    ]
+]
+type callback
+CALLBACK DATA: vote_9_0
+[
+    [0] "[[352073877, 388200653, 401503990, 93091905, 387881985, 282696764, 254991387], [98141300, 369487170]]",
+    [1] "Есть, нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990,
+        [3] 93091905,
+        [4] 387881985,
+        [5] 282696764,
+        [6] 254991387
+    ],
+    [1] [
+        [0] 98141300,
+        [1] 369487170
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990,
+        [3] 93091905,
+        [4] 387881985,
+        [5] 282696764,
+        [6] 254991387
+    ],
+    [1] [
+        [0] 98141300,
+        [1] 369487170
+    ]
+]
+type callback
+CALLBACK DATA: vote_7_1
+[
+    [0] "[[306246267, 352073877, 401503990, 387881985, 98141300, 282696764, 254991387, 374169485], [93091905, 388200653, 369487170, 377027262]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 401503990,
+        [3] 387881985,
+        [4] 98141300,
+        [5] 282696764,
+        [6] 254991387,
+        [7] 374169485
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262
+    ]
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 401503990,
+        [3] 387881985,
+        [4] 98141300,
+        [5] 282696764,
+        [6] 254991387,
+        [7] 374169485
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262
+    ]
+]
+type message
+type message
+type callback
+CALLBACK DATA: vote_7_0
+[
+    [0] "[[306246267, 352073877, 401503990, 387881985, 98141300, 282696764, 254991387, 374169485], [93091905, 388200653, 369487170, 377027262, 388446083]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 401503990,
+        [3] 387881985,
+        [4] 98141300,
+        [5] 282696764,
+        [6] 254991387,
+        [7] 374169485
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083
+    ]
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 401503990,
+        [3] 387881985,
+        [4] 98141300,
+        [5] 282696764,
+        [6] 254991387,
+        [7] 374169485
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083
+    ]
+]
+type callback
+CALLBACK DATA: vote_8_0
+[
+    [0] "[[352073877, 387881985, 401503990, 282696764, 374169485], [93091905, 98141300, 388200653, 369487170, 254991387]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 387881985,
+        [2] 401503990,
+        [3] 282696764,
+        [4] 374169485
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 98141300,
+        [2] 388200653,
+        [3] 369487170,
+        [4] 254991387
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 387881985,
+        [2] 401503990,
+        [3] 282696764,
+        [4] 374169485
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 98141300,
+        [2] 388200653,
+        [3] 369487170,
+        [4] 254991387
+    ]
+]
+type callback
+CALLBACK DATA: announcement
+type callback
+CALLBACK DATA: vote_9_0
+[
+    [0] "[[352073877, 388200653, 401503990, 93091905, 387881985, 282696764, 254991387, 374169485], [98141300, 369487170]]",
+    [1] "Есть, нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990,
+        [3] 93091905,
+        [4] 387881985,
+        [5] 282696764,
+        [6] 254991387,
+        [7] 374169485
+    ],
+    [1] [
+        [0] 98141300,
+        [1] 369487170
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990,
+        [3] 93091905,
+        [4] 387881985,
+        [5] 282696764,
+        [6] 254991387,
+        [7] 374169485
+    ],
+    [1] [
+        [0] 98141300,
+        [1] 369487170
+    ]
+]
 type message
 type message
 type message
 type message
 type message
 type message
-/home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:70:in `call': Telegram API has returned the error. (ok: "false", error_code: "400", description: "Bad Request: group chat was migrated to a supergroup chat", parameters: "{"migrate_to_chat_id"=>-1001133247548}") (Telegram::Bot::Exceptions::ResponseError)
+type message
+nil
+type message
+type message
+type message
+type message
+type callback
+CALLBACK DATA: profilesList
+type message
+type message
+type callback
+CALLBACK DATA: vote_7_0
+[
+    [0] "[[306246267, 352073877, 401503990, 387881985, 98141300, 282696764, 254991387, 374169485, 426990715], [93091905, 388200653, 369487170, 377027262, 388446083]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 401503990,
+        [3] 387881985,
+        [4] 98141300,
+        [5] 282696764,
+        [6] 254991387,
+        [7] 374169485,
+        [8] 426990715
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083
+    ]
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 401503990,
+        [3] 387881985,
+        [4] 98141300,
+        [5] 282696764,
+        [6] 254991387,
+        [7] 374169485,
+        [8] 426990715
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083
+    ]
+]
+type message
+type message
+type message
+type message
+type callback
+CALLBACK DATA: vote_7_0
+[
+    [0] "[[306246267, 352073877, 401503990, 387881985, 98141300, 282696764, 254991387, 374169485, 426990715], [93091905, 388200653, 369487170, 377027262, 388446083]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 401503990,
+        [3] 387881985,
+        [4] 98141300,
+        [5] 282696764,
+        [6] 254991387,
+        [7] 374169485,
+        [8] 426990715
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083
+    ]
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 401503990,
+        [3] 387881985,
+        [4] 98141300,
+        [5] 282696764,
+        [6] 254991387,
+        [7] 374169485,
+        [8] 426990715
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083
+    ]
+]
+type callback
+CALLBACK DATA: vote_7_1
+[
+    [0] "[[306246267, 352073877, 401503990, 387881985, 98141300, 282696764, 254991387, 374169485, 426990715], [93091905, 388200653, 369487170, 377027262, 388446083]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 401503990,
+        [3] 387881985,
+        [4] 98141300,
+        [5] 282696764,
+        [6] 254991387,
+        [7] 374169485,
+        [8] 426990715
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083
+    ]
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 401503990,
+        [3] 387881985,
+        [4] 98141300,
+        [5] 282696764,
+        [6] 254991387,
+        [7] 374169485,
+        [8] 426990715
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083
+    ]
+]
+type callback
+CALLBACK DATA: vote_7_0
+[
+    [0] "[[306246267, 352073877, 401503990, 387881985, 282696764, 254991387, 374169485, 426990715], [93091905, 388200653, 369487170, 377027262, 388446083, 98141300]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 401503990,
+        [3] 387881985,
+        [4] 282696764,
+        [5] 254991387,
+        [6] 374169485,
+        [7] 426990715
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083,
+        [5] 98141300
+    ]
+]/home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:70:in `call': Telegram API has returned the error. (error_code: "502", uri: "https://api.telegram.org/bot271527823:AAHchI90iJUG7qVpqY6-M1WvUc2jElyCDQo/getUpdates") (Telegram::Bot::Exceptions::ResponseError)
 	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:54:in `method_missing'
-	from main.rb:417:in `block (2 levels) in <main>'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:38:in `block in fetch_updates'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `each'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `fetch_updates'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:30:in `fetch_updates'
 	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:25:in `listen'
-	from main.rb:261:in `block in <main>'
+	from main.rb:351:in `block in <main>'
 	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:18:in `run'
 	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:8:in `run'
-	from main.rb:260:in `<main>'
+	from main.rb:350:in `<main>'
+
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 401503990,
+        [3] 387881985,
+        [4] 282696764,
+        [5] 254991387,
+        [6] 374169485,
+        [7] 426990715
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083,
+        [5] 98141300
+    ]
+]
 type message
-/home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:70:in `call': Telegram API has returned the error. (ok: "false", error_code: "400", description: "Bad Request: can't parse inline keyboard button: Can't find field "text"") (Telegram::Bot::Exceptions::ResponseError)
+type message
+type callback
+CALLBACK DATA: vote_9_0
+[
+    [0] "[[352073877, 388200653, 401503990, 93091905, 387881985, 282696764, 254991387, 374169485, 426990715], [98141300, 369487170]]",
+    [1] "Есть, нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990,
+        [3] 93091905,
+        [4] 387881985,
+        [5] 282696764,
+        [6] 254991387,
+        [7] 374169485,
+        [8] 426990715
+    ],
+    [1] [
+        [0] 98141300,
+        [1] 369487170
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990,
+        [3] 93091905,
+        [4] 387881985,
+        [5] 282696764,
+        [6] 254991387,
+        [7] 374169485,
+        [8] 426990715
+    ],
+    [1] [
+        [0] 98141300,
+        [1] 369487170
+    ]
+]
+type callback
+CALLBACK DATA: vote_9_1
+[
+    [0] "[[352073877, 388200653, 401503990, 93091905, 387881985, 282696764, 254991387, 374169485, 426990715, 98141300], [369487170]]",
+    [1] "Есть, нет"
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990,
+        [3] 93091905,
+        [4] 387881985,
+        [5] 282696764,
+        [6] 254991387,
+        [7] 374169485,
+        [8] 426990715,
+        [9] 98141300
+    ],
+    [1] [
+        [0] 369487170
+    ]
+]
+[
+    [0] [
+        [0] 352073877,
+        [1] 388200653,
+        [2] 401503990,
+        [3] 93091905,
+        [4] 387881985,
+        [5] 282696764,
+        [6] 254991387,
+        [7] 374169485,
+        [8] 426990715,
+        [9] 98141300
+    ],
+    [1] [
+        [0] 369487170
+    ]
+]
+type message
+type message
+type message
+type message
+type message
+type message
+type callback
+CALLBACK DATA: vote_7_0
+[
+    [0] "[[306246267, 352073877, 401503990, 387881985, 282696764, 254991387, 374169485, 426990715, 98141300], [93091905, 388200653, 369487170, 377027262, 388446083]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 401503990,
+        [3] 387881985,
+        [4] 282696764,
+        [5] 254991387,
+        [6] 374169485,
+        [7] 426990715,
+        [8] 98141300
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083
+    ]
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 401503990,
+        [3] 387881985,
+        [4] 282696764,
+        [5] 254991387,
+        [6] 374169485,
+        [7] 426990715,
+        [8] 98141300
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083
+    ]
+]
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type message
+type callback
+CALLBACK DATA: vote_7_1
+[
+    [0] "[[306246267, 352073877, 401503990, 387881985, 282696764, 254991387, 374169485, 426990715, 98141300], [93091905, 388200653, 369487170, 377027262, 388446083]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 401503990,
+        [3] 387881985,
+        [4] 282696764,
+        [5] 254991387,
+        [6] 374169485,
+        [7] 426990715,
+        [8] 98141300
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083
+    ]
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 401503990,
+        [3] 387881985,
+        [4] 282696764,
+        [5] 254991387,
+        [6] 374169485,
+        [7] 426990715,
+        [8] 98141300
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083
+    ]
+]
+type callback
+CALLBACK DATA: vote_7_0
+[
+    [0] "[[306246267, 352073877, 401503990, 387881985, 282696764, 254991387, 374169485, 426990715, 98141300], [93091905, 388200653, 369487170, 377027262, 388446083]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 401503990,
+        [3] 387881985,
+        [4] 282696764,
+        [5] 254991387,
+        [6] 374169485,
+        [7] 426990715,
+        [8] 98141300
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083
+    ]
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 401503990,
+        [3] 387881985,
+        [4] 282696764,
+        [5] 254991387,
+        [6] 374169485,
+        [7] 426990715,
+        [8] 98141300
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083
+    ]
+]
+type callback
+CALLBACK DATA: vote_7_1
+[
+    [0] "[[306246267, 352073877, 401503990, 387881985, 282696764, 254991387, 374169485, 426990715, 98141300], [93091905, 388200653, 369487170, 377027262, 388446083]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 401503990,
+        [3] 387881985,
+        [4] 282696764,
+        [5] 254991387,
+        [6] 374169485,
+        [7] 426990715,
+        [8] 98141300
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083
+    ]
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 401503990,
+        [3] 387881985,
+        [4] 282696764,
+        [5] 254991387,
+        [6] 374169485,
+        [7] 426990715,
+        [8] 98141300
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083
+    ]
+]
+type callback
+CALLBACK DATA: vote_7_0
+[
+    [0] "[[306246267, 352073877, 387881985, 282696764, 254991387, 374169485, 426990715, 98141300], [93091905, 388200653, 369487170, 377027262, 388446083, 401503990]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 387881985,
+        [3] 282696764,
+        [4] 254991387,
+        [5] 374169485,
+        [6] 426990715,
+        [7] 98141300
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083,
+        [5] 401503990
+    ]
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 387881985,
+        [3] 282696764,
+        [4] 254991387,
+        [5] 374169485,
+        [6] 426990715,
+        [7] 98141300
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083,
+        [5] 401503990
+    ]
+]
+type callback
+CALLBACK DATA: vote_7_1
+[
+    [0] "[[306246267, 352073877, 387881985, 282696764, 254991387, 374169485, 426990715, 98141300, 401503990], [93091905, 388200653, 369487170, 377027262, 388446083]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 387881985,
+        [3] 282696764,
+        [4] 254991387,
+        [5] 374169485,
+        [6] 426990715,
+        [7] 98141300,
+        [8] 401503990
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083
+    ]
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 387881985,
+        [3] 282696764,
+        [4] 254991387,
+        [5] 374169485,
+        [6] 426990715,
+        [7] 98141300,
+        [8] 401503990
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083
+    ]
+]
+type callback
+CALLBACK DATA: vote_7_0
+[
+    [0] "[[306246267, 352073877, 387881985, 282696764, 254991387, 374169485, 426990715, 98141300], [93091905, 388200653, 369487170, 377027262, 388446083, 401503990]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 387881985,
+        [3] 282696764,
+        [4] 254991387,
+        [5] 374169485,
+        [6] 426990715,
+        [7] 98141300
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083,
+        [5] 401503990
+    ]
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 387881985,
+        [3] 282696764,
+        [4] 254991387,
+        [5] 374169485,
+        [6] 426990715,
+        [7] 98141300
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083,
+        [5] 401503990
+    ]
+]
+type callback
+CALLBACK DATA: vote_7_1
+[
+    [0] "[[306246267, 352073877, 387881985, 282696764, 254991387, 374169485, 426990715, 98141300, 401503990], [93091905, 388200653, 369487170, 377027262, 388446083]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 387881985,
+        [3] 282696764,
+        [4] 254991387,
+        [5] 374169485,
+        [6] 426990715,
+        [7] 98141300,
+        [8] 401503990
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083
+    ]
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 387881985,
+        [3] 282696764,
+        [4] 254991387,
+        [5] 374169485,
+        [6] 426990715,
+        [7] 98141300,
+        [8] 401503990
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083
+    ]
+]
+type callback
+CALLBACK DATA: vote_7_0
+[
+    [0] "[[306246267, 352073877, 387881985, 282696764, 254991387, 374169485, 426990715, 98141300], [93091905, 388200653, 369487170, 377027262, 388446083, 401503990]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 387881985,
+        [3] 282696764,
+        [4] 254991387,
+        [5] 374169485,
+        [6] 426990715,
+        [7] 98141300
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083,
+        [5] 401503990
+    ]
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 387881985,
+        [3] 282696764,
+        [4] 254991387,
+        [5] 374169485,
+        [6] 426990715,
+        [7] 98141300
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083,
+        [5] 401503990
+    ]
+]
+type callback
+CALLBACK DATA: vote_7_1
+[
+    [0] "[[306246267, 352073877, 387881985, 282696764, 254991387, 374169485, 426990715, 98141300, 401503990], [93091905, 388200653, 369487170, 377027262, 388446083]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 387881985,
+        [3] 282696764,
+        [4] 254991387,
+        [5] 374169485,
+        [6] 426990715,
+        [7] 98141300,
+        [8] 401503990
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083
+    ]
+]/home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:70:in `call': Telegram API has returned the error. (error_code: "502", uri: "https://api.telegram.org/bot271527823:AAHchI90iJUG7qVpqY6-M1WvUc2jElyCDQo/getUpdates") (Telegram::Bot::Exceptions::ResponseError)
 	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:54:in `method_missing'
-	from main.rb:273:in `block (2 levels) in <main>'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:38:in `block in fetch_updates'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `each'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `fetch_updates'
+	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:30:in `fetch_updates'
 	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:25:in `listen'
-	from main.rb:261:in `block in <main>'
+	from main.rb:351:in `block in <main>'
 	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:18:in `run'
 	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:8:in `run'
-	from main.rb:260:in `<main>'
+	from main.rb:350:in `<main>'
+
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 387881985,
+        [3] 282696764,
+        [4] 254991387,
+        [5] 374169485,
+        [6] 426990715,
+        [7] 98141300,
+        [8] 401503990
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083
+    ]
+]
+type callback
+CALLBACK DATA: vote_7_0
+[
+    [0] "[[306246267, 352073877, 387881985, 282696764, 254991387, 374169485, 426990715, 98141300], [93091905, 388200653, 369487170, 377027262, 388446083, 401503990]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 387881985,
+        [3] 282696764,
+        [4] 254991387,
+        [5] 374169485,
+        [6] 426990715,
+        [7] 98141300
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083,
+        [5] 401503990
+    ]
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 387881985,
+        [3] 282696764,
+        [4] 254991387,
+        [5] 374169485,
+        [6] 426990715,
+        [7] 98141300
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083,
+        [5] 401503990
+    ]
+]
+type callback
+CALLBACK DATA: vote_7_1
+[
+    [0] "[[306246267, 352073877, 387881985, 282696764, 254991387, 374169485, 426990715, 98141300, 401503990], [93091905, 388200653, 369487170, 377027262, 388446083]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 387881985,
+        [3] 282696764,
+        [4] 254991387,
+        [5] 374169485,
+        [6] 426990715,
+        [7] 98141300,
+        [8] 401503990
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083
+    ]
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 387881985,
+        [3] 282696764,
+        [4] 254991387,
+        [5] 374169485,
+        [6] 426990715,
+        [7] 98141300,
+        [8] 401503990
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083
+    ]
+]
+type callback
+CALLBACK DATA: vote_7_0
+[
+    [0] "[[306246267, 352073877, 387881985, 282696764, 254991387, 374169485, 426990715, 98141300], [93091905, 388200653, 369487170, 377027262, 388446083, 401503990]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 387881985,
+        [3] 282696764,
+        [4] 254991387,
+        [5] 374169485,
+        [6] 426990715,
+        [7] 98141300
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083,
+        [5] 401503990
+    ]
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 387881985,
+        [3] 282696764,
+        [4] 254991387,
+        [5] 374169485,
+        [6] 426990715,
+        [7] 98141300
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083,
+        [5] 401503990
+    ]
+]
 type message
 type message
 type message
 type callback
+CALLBACK DATA: riflesList
 type callback
+CALLBACK DATA: rifleInfo_7
 type callback
+CALLBACK DATA: setRifleComment_7
+type message
+type callback
+CALLBACK DATA: rifleFullInfo_7
+type callback
+CALLBACK DATA: riflesList
+type callback
+CALLBACK DATA: back
+type callback
+CALLBACK DATA: announcement
+type message
+type message
 type message
 type message
 type callback
+CALLBACK DATA: addDonate
 type callback
+CALLBACK DATA: addUserDonate_7
 type message
 type message
 type message
 type message
-type callback
-/home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:70:in `call': Telegram API has returned the error. (ok: "false", error_code: "400", description: "Bad Request: can't parse inline keyboard button: Can't find field "text"") (Telegram::Bot::Exceptions::ResponseError)
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:54:in `method_missing'
-	from main.rb:273:in `block (2 levels) in <main>'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:38:in `block in fetch_updates'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `each'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `fetch_updates'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:25:in `listen'
-	from main.rb:261:in `block in <main>'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:18:in `run'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:8:in `run'
-	from main.rb:260:in `<main>'
-type callback
-/home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:70:in `call': Telegram API has returned the error. (ok: "false", error_code: "400", description: "Bad Request: message is not modified") (Telegram::Bot::Exceptions::ResponseError)
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:54:in `method_missing'
-	from main.rb:288:in `block (2 levels) in <main>'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:38:in `block in fetch_updates'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `each'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `fetch_updates'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:25:in `listen'
-	from main.rb:261:in `block in <main>'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:18:in `run'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:8:in `run'
-	from main.rb:260:in `<main>'
+type message
+type message
+type message
+type message
 type message
 type message
 type message
 type message
 type message
 type callback
+CALLBACK DATA: vote_7_1
+[
+    [0] "[[306246267, 352073877, 387881985, 282696764, 254991387, 374169485, 426990715, 98141300, 401503990], [93091905, 388200653, 369487170, 377027262, 388446083]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 387881985,
+        [3] 282696764,
+        [4] 254991387,
+        [5] 374169485,
+        [6] 426990715,
+        [7] 98141300,
+        [8] 401503990
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083
+    ]
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 387881985,
+        [3] 282696764,
+        [4] 254991387,
+        [5] 374169485,
+        [6] 426990715,
+        [7] 98141300,
+        [8] 401503990
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083
+    ]
+]
 type callback
+CALLBACK DATA: vote_7_0
+[
+    [0] "[[306246267, 352073877, 387881985, 282696764, 254991387, 374169485, 98141300, 401503990], [93091905, 388200653, 369487170, 377027262, 388446083, 426990715]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 387881985,
+        [3] 282696764,
+        [4] 254991387,
+        [5] 374169485,
+        [6] 98141300,
+        [7] 401503990
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083,
+        [5] 426990715
+    ]
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 387881985,
+        [3] 282696764,
+        [4] 254991387,
+        [5] 374169485,
+        [6] 98141300,
+        [7] 401503990
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083,
+        [5] 426990715
+    ]
+]
 type callback
+CALLBACK DATA: vote_7_1
+[
+    [0] "[[306246267, 352073877, 387881985, 282696764, 254991387, 374169485, 98141300, 401503990, 426990715], [93091905, 388200653, 369487170, 377027262, 388446083]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 387881985,
+        [3] 282696764,
+        [4] 254991387,
+        [5] 374169485,
+        [6] 98141300,
+        [7] 401503990,
+        [8] 426990715
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083
+    ]
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 387881985,
+        [3] 282696764,
+        [4] 254991387,
+        [5] 374169485,
+        [6] 98141300,
+        [7] 401503990,
+        [8] 426990715
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083
+    ]
+]
 type callback
-type callback
-type callback
-type message
-type message
-type message
-type message
-type message
-type callback
-type callback
-type callback
-type callback
-type callback
-type callback
-type message
-type callback
-type callback
-type callback
-type callback
-type callback
-type message
-type callback
-type callback
-type callback
-type callback
-type callback
-type callback
-type callback
-type callback
-type callback
-type callback
-main.rb:172:in `get_hash': undefined method `to_h' for #<Array:0x00000001389680> (NoMethodError)
-	from main.rb:424:in `block (2 levels) in <main>'
-	from /home/softs/.rvm/gems/ruby-2.0.0-p643@rails414/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:38:in `block in fetch_updates'
-	from /home/softs/.rvm/gems/ruby-2.0.0-p643@rails414/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `each'
-	from /home/softs/.rvm/gems/ruby-2.0.0-p643@rails414/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `fetch_updates'
-	from /home/softs/.rvm/gems/ruby-2.0.0-p643@rails414/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:25:in `listen'
-	from main.rb:261:in `block in <main>'
-	from /home/softs/.rvm/gems/ruby-2.0.0-p643@rails414/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:18:in `run'
-	from /home/softs/.rvm/gems/ruby-2.0.0-p643@rails414/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:8:in `run'
-	from main.rb:260:in `<main>'
-type message
-/home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:70:in `call': Telegram API has returned the error. (ok: "false", error_code: "400", description: "Bad Request: message is not modified") (Telegram::Bot::Exceptions::ResponseError)
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:54:in `method_missing'
-	from main.rb:288:in `block (2 levels) in <main>'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:38:in `block in fetch_updates'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `each'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `fetch_updates'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:25:in `listen'
-	from main.rb:261:in `block in <main>'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:18:in `run'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:8:in `run'
-	from main.rb:260:in `<main>'
-type message
-type callback
-/home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:70:in `call': Telegram API has returned the error. (ok: "false", error_code: "400", description: "Bad Request: message is not modified") (Telegram::Bot::Exceptions::ResponseError)
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:54:in `method_missing'
-	from main.rb:288:in `block (2 levels) in <main>'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:38:in `block in fetch_updates'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `each'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `fetch_updates'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:25:in `listen'
-	from main.rb:261:in `block in <main>'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:18:in `run'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:8:in `run'
-	from main.rb:260:in `<main>'
-type callback
-/home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:70:in `call': Telegram API has returned the error. (ok: "false", error_code: "400", description: "Bad Request: message is not modified") (Telegram::Bot::Exceptions::ResponseError)
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:54:in `method_missing'
-	from main.rb:288:in `block (2 levels) in <main>'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:38:in `block in fetch_updates'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `each'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `fetch_updates'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:25:in `listen'
-	from main.rb:261:in `block in <main>'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:18:in `run'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:8:in `run'
-	from main.rb:260:in `<main>'
-type callback
-/home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:70:in `call': Telegram API has returned the error. (ok: "false", error_code: "400", description: "Bad Request: message is not modified") (Telegram::Bot::Exceptions::ResponseError)
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/api.rb:54:in `method_missing'
-	from main.rb:390:in `block (2 levels) in <main>'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:38:in `block in fetch_updates'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `each'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:33:in `fetch_updates'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:25:in `listen'
-	from main.rb:261:in `block in <main>'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:18:in `run'
-	from /home/softs/.rvm/gems/ruby-2.3.1/gems/telegram-bot-ruby-0.8.1/lib/telegram/bot/client.rb:8:in `run'
-	from main.rb:260:in `<main>'
-type callback
-type callback
-type message
-type message
-type message
-type message
-type callback
-type callback
-type message
+CALLBACK DATA: vote_7_0
+[
+    [0] "[[306246267, 352073877, 387881985, 282696764, 254991387, 374169485, 98141300, 401503990], [93091905, 388200653, 369487170, 377027262, 388446083, 426990715]]",
+    [1] "Да,Нет"
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 387881985,
+        [3] 282696764,
+        [4] 254991387,
+        [5] 374169485,
+        [6] 98141300,
+        [7] 401503990
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083,
+        [5] 426990715
+    ]
+]
+[
+    [0] [
+        [0] 306246267,
+        [1] 352073877,
+        [2] 387881985,
+        [3] 282696764,
+        [4] 254991387,
+        [5] 374169485,
+        [6] 98141300,
+        [7] 401503990
+    ],
+    [1] [
+        [0] 93091905,
+        [1] 388200653,
+        [2] 369487170,
+        [3] 377027262,
+        [4] 388446083,
+        [5] 426990715
+    ]
+]
