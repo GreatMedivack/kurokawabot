@@ -25,7 +25,10 @@ EMOJI = {
 		happy_2: "\u{1F38A}",
 		badman: "\u{1F612}",
 		inlove: "\u{1F60D}",
-		bank: "\u{1F3E6}"
+		bank: "\u{1F3E6}",
+		uniform: "\u{1F482}",
+		backpack: "\u{1F4BC}",
+		radio: "\u{1F4FB}"
 }
 
 GROUP_CHAT_ID = -1001133247548
@@ -33,7 +36,7 @@ GROUP_CHAT_ID = -1001133247548
 MONTHS = [nil, "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"]
 
 RIFLE_COLUMNS = [:id, :title, :condition, :user_id, :comment]
-USER_COLUMNS = [:id, :name, :chat_id, :phone, :command, :object_id, :subject_id, :registred]
+USER_COLUMNS = [:id, :name, :chat_id, :phone, :command, :object_id, :subject_id, :registred, :uniform]
 DONATE_COLUMS = [:id, :user_id, :sum, :created_at]
 VALID_COMMANDS = ['/help', '/changename', '/donate']
 ADMIN_ID = 98141300
@@ -80,7 +83,7 @@ def voted_users(id, chat_id, index)
 	ap data
 	users = string_to_array(data[0])
 	text = data[1].split(',')
-	new_users = [] 
+	new_users = []
 	ap users
 	users.each { |arr| new_users << arr.dup}
 	ap new_users
@@ -289,12 +292,12 @@ def get_voters(id, text)
 	msg = "Результаты:\n"
 	vote_users.each_with_index do |users, index|
 		tmp_msg = "#{variants[index]}:\n"
-		users.each do |id| 
+		users.each do |id|
 			user = get_user_by_chat_id(id)
 			if user.empty?
 				count += 1
 			else
-				tmp_msg += "\t\t\t\t#{user[:name]}\n"
+				tmp_msg += "\t\t\t\t#{user[:name]}#{EMOJI[:uniform] if user[:uniform]}#{EMOJI[:backpack] if user[:backpack]}#{EMOJI[:radio] if user[:radio]}\n"
 			end
 		end
 		tmp_msg += "\t\t\t\t#{count} без регистрации\n" if count > 0
@@ -337,6 +340,9 @@ def generate_profile(user)
 	msg = "#{EMOJI[:cheburek]}Позывной: #{user[:name]}\n"
 	msg += "#{EMOJI[:phone]}Телефон: #{phone_format(user[:phone])}\n"
 	msg += "#{EMOJI[:gun]}Оружие: #{user[:rifle_title] ||= 'не закреплено' }"
+	msg += "#{EMOJI[:uniform]}Форма: #{user[:uniform] ? 'есть' : 'нет'}"
+	msg += "#{EMOJI[:backpack]}Рюкзак: #{user[:backpack] ? 'есть' : 'нет'}"
+	msg += "#{EMOJI[:radio]}Рация: #{user[:radio] ? 'есть' : 'нет'}"
 	if user[:rifle_status].nil?
 		msg += "\n"
 	else
@@ -349,7 +355,7 @@ end
 
 Telegram::Bot::Client.run(token) do |bot|
 	bot.listen do |message|
-		begin	
+		begin
 		  case message
 		  when Telegram::Bot::Types::CallbackQuery
 		  	puts "type callback"
@@ -504,7 +510,7 @@ Telegram::Bot::Client.run(token) do |bot|
 		  when Telegram::Bot::Types::InlineQuery
 		  	puts "type inline query"
 		  	user = get_user_by_chat_id(message.from.id)
-		  
+
 		  when Telegram::Bot::Types::Message
 		  	puts "type message"
 

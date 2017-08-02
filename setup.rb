@@ -13,7 +13,10 @@ rows = db.execute <<-SQL
     subject_id integer,
     registred boolean default 0,
     department_id integer default 1,
-    rifle_id integer
+    rifle_id integer,
+    uniform boolean default 0,
+    backpack boolean default 0,
+    radio boolean default 0,
   );
 SQL
 
@@ -82,5 +85,3 @@ db.execute "insert into rifles (title, condition, comment) values ('Г3',       
 db.execute "insert into rifles (title, condition, comment) values ('ХК-94',	          0, 'Треснули стенки гирбокса')"
 db.execute "insert into rifles (title, condition, comment) values ('М4A1',                0, 'Треснули стенки гербокса, отвалилось крепление штыка, разваливается цивье, перекосило мушку и вообще он говно.')"
 db.execute "insert into rifles (title, condition, comment) values ('Г36',                 1, 'Награда за совместный просмотр кетайских мультиков про пидоров.')"
-
-
